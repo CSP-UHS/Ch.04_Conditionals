@@ -1,4 +1,4 @@
-<img align="left" src="http://hermonswebsites.com/Classes/CS/python.png"><H2><a href="https://sites.google.com/urbandaleschools.com/pythonjedi/4-conditionals" target="_blank">Chapter 4 Conditionals</a></H2>
+<img align="left" src="http://hermonswebsites.com/Classes/CS/python.png"><H2>Chapter 4 Conditionals</H2>
 
 In this chapter you will be learning about IF-ELIF-ELSE statements. 
 
