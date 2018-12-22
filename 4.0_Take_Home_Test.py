@@ -136,7 +136,8 @@ but I will definitely not ask another person except the instructor. Signed: ____
 
 '''
  10. What things are wrong with this section of code?
-     The programmer wants to set the force sensitivity variable according to the character the user selects.
+     The programmer wants to set the force sensitivity variable 
+     according to the character the user selects.
      
      print("Welcome to the Jedi Academy!")
 
@@ -147,10 +148,10 @@ but I will definitely not ask another person except the instructor. Signed: ____
      user_input = input("Choose a character?")
 
      if user_input = A:
-         money = 1000
+         sensitivity = 1000
      else if user_input = B:
-         money = 900
+         sensitivity = 900
      else if user_input = C:
-         money = 0
+         sensitivity = 0
 '''
 
