@@ -18,3 +18,22 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+print("Give me a number, any number at all!")
+number=input("")
+
+if int(number)%2 == 1:
+    print("Yes, your number is odd.")
+else:
+    print("Yes, your number is very much even.")
+
+if int(number) > 0:
+    print("Wow! This number is quite positive.")
+elif int(number) < 0:
+    print("Interesting, this number is negative.")
+else:
+    print("This number is zero!")
+
+if int(number) > -100 and int(number) < 100:
+    print("Marvelous! This number is inclusively between negative and positive 100!")
+else:
+    print("Hm.... this number is not in between negative and positive 100.")
