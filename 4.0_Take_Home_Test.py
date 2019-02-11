@@ -1,18 +1,23 @@
-'''
+"""
 HONOR CODE: I solemnly promise that while taking this test I will only use PyCharm or the Internet,
 but I will definitely not ask another person except the instructor. Signed: ______________________
 
 
   1. What is missing from this code?
-     
+
      midichlorians = float(input("Enter midichlorian count: ")
-     if midichlorians > 10000:
+     if midichlorians >= 10000:
          print("You have serious Jedi potential")
      else:
          print("Jedi, you will never be.")
-'''
-     
-     
+"""
+midichlorians = float(input("Enter midichlorian count: "))
+if midichlorians >= 10000:
+    print("You have serious Jedi potential")
+else:
+    print("Jedi, you will never be.")
+
+# Missing the extra parenthesis after midichlorian count
      
 '''
   2. This runs, but there is something wrong. What is it?
@@ -25,8 +30,7 @@ but I will definitely not ask another person except the instructor. Signed: ____
      else:
          print("Incorrect.")
 '''
-
-
+# It prints part of the question after you answer
 
 '''
      
@@ -34,15 +38,15 @@ but I will definitely not ask another person except the instructor. Signed: ____
      positive value. One prevents it from running, and the other is subtle.
      Make sure the if statement works no matter what x is set to.
      Identify both issues. 
-     
+    
      x == 4
      if x >= 0:
          print("x is positive.")
      else:
          print("x is not positive.")
  '''
- 
- 
+# Change to just > not >=
+# If and else are indented to much
  
  '''
   4. What three things are wrong with the following code?
@@ -51,8 +55,10 @@ but I will definitely not ask another person except the instructor. Signed: ____
      if x = 3
          print("You entered 3")
  '''
- 
- 
+ # Must have float or int in front of input
+ # Need colon and indent after the if
+ # Put x in parenthesis to make it work and not just print 3 every time
+ 0
  '''
   5. There are four things wrong with this code. Identify all four issues. 
      
@@ -62,8 +68,10 @@ but I will definitely not ask another person except the instructor. Signed: ____
          else
          print("Incorrect! It is BB8.")
 '''
-
-
+# Change answer to a
+# put the answer input to bb8 and put if a.lower
+# else needs to not be indented and needs to have a colon after
+# It needs to be == not just =
 
 '''
   6. This program doesn't work correctly. What is wrong?
@@ -72,6 +80,8 @@ but I will definitely not ask another person except the instructor. Signed: ____
      if x == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":
          print("That is correct!")
 '''
+
+# All of the answers are assinged to the sane variable
 
 
 
@@ -91,9 +101,9 @@ but I will definitely not ask another person except the instructor. Signed: ____
      if z:
          print("Star Wars Episodes 4,5,6 are the best!")
 '''
+#Guess - It will print episodes 4,5,6
 
-
-
+#Answer - It printed episodes 4,5,6, were the best
 
 '''
  8. Look at the code below. Write you best guess on what it will print.
@@ -114,8 +124,9 @@ but I will definitely not ask another person except the instructor. Signed: ____
      print(x == 5 and y == 5)
      print(x == 5 or y == 5)
 '''
+# Print true false stuff
 
-
+# Printed true false stuff
 
 '''
  9. Look at the code below. Write you best guess on what it will print.
@@ -131,8 +142,9 @@ but I will definitely not ask another person except the instructor. Signed: ____
      print((2 == 2) == True)
      print("?"<"!")
 '''
+# Print true false stuff
 
-
+# Printed true, false, true, true
 
 '''
  10. What things are wrong with this section of code?
@@ -154,4 +166,15 @@ but I will definitely not ask another person except the instructor. Signed: ____
      else if user_input = C:
          sensitivity = 0
 '''
+print("Welcome to the Jedi Academy!")
+print("A. Jedi Master")
+print("B. Sith Lord")
+print("C. Droid")
+user_input = input("Choose a character?" )
 
+if user_input.upper() == "A":
+    sensitivity = 1000
+elif user_input.upper() == "B":
+    sensitivity = 900
+else:
+    sensitivity = 0
