@@ -18,3 +18,6 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+
+number = int(input("Enter a number: "))
+if

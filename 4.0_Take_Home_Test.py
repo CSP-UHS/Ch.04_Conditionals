@@ -81,7 +81,7 @@ else:
          print("That is correct!")
 '''
 
-# All of the answers are assinged to the sane variable
+
 
 
 
