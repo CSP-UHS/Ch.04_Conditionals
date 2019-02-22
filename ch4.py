@@ -13,23 +13,23 @@ else:
 
 # 2. Make the following program work.
 
-x = (int(input("Enter a number: "))
-    if x = 3:
-print("You entered 3")
+x = int(input("Enter a number: "))
+if x == 3:
+    print("You entered 3")
 
 # 3. Make the following program work.
 
 answer = input("What is the name of Poe Dameron's Droid? ")
-if a = "BB8":
-print("Correct!")
-else
-print("Incorrect! It is BB8.")
+if answer.lower() == "bb8":
+    print("Correct!")
+else:
+    print("Incorrect! It is BB8.")
 
 # 4. Make the following program work.
 
-x = input("Who are the top 3 greatest Jedi?")
-if jedi == Yoda or jedi == Luke Skywalker or jedi == Obi - Wan Kenobi:
-print("That is correct!")
+jedi = input("Who are the top 3 greatest Jedi?")
+if jedi.lower() == "yoda" or jedi.lower() == "luke skywalker" or jedi.lower() == "obi - wan kenobi":
+    print("That is correct!")
 
 # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
 
