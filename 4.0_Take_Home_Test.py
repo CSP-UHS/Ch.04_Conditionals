@@ -30,7 +30,7 @@ but I will definitely not ask another person except the instructor. Signed: ____
 
   # 4. Make the following program work.
      
-     x = input("Who are the top 3 greatest Jedi?")
+     x = input("Name one of the top 3 greatest Jedi.")
      if jedi == Yoda or Luke Skywalker or Obi-Wan Kenobi:
          print "That is correct!"
 
@@ -53,4 +53,4 @@ but I will definitely not ask another person except the instructor. Signed: ____
      else if user_input = C:
          sensitivity = 0
 
-
+     print("Sensitivity: ",Sensitivity)
