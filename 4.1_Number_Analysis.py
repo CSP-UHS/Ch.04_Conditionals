@@ -20,4 +20,19 @@ Out:  Test 1: Odd
 '''
 
 number = int(input("Enter a number: "))
-if
+if (number % 2) == 0:
+    print("Number is even")
+else:
+    print("Number is odd")
+
+if number > 0:
+    print("Number is positive")
+elif number == 0:
+    print("Zero")
+else:
+    print("Number is negative")
+
+if number > -100 or < 100:
+    print("Number is inclusive")
+else:
+    print("Number is exclusive")
