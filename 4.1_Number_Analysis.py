@@ -32,7 +32,7 @@ elif number == 0:
 else:
     print("Number is negative")
 
-if number > -100 or < 100:
+if number <= 100 or >= -100:
     print("Number is inclusive")
 else:
     print("Number is exclusive")
