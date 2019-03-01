@@ -50,6 +50,8 @@ else:
     print("Wrong, the correct answer is water")
 print()
 
-print(score)
+print("You scored", score, "out of 5")
 
+grade = score * .100
 
+print(grade)
