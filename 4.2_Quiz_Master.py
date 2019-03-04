@@ -52,6 +52,17 @@ print()
 
 print("You scored", score, "out of 5")
 
-grade = score * .100
+grade = score / 5
 
-print(grade)
+if grade == 1:
+    print("A 100%")
+elif grade == .8:
+    print("B 80%")
+elif grade ==.6:
+    print("D 60%")
+elif grade == .4:
+    print("F 40%")
+elif grade == .2:
+    print("F 20%")
+else:
+    print("F 0%")
