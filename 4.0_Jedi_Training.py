@@ -18,19 +18,19 @@
  #
  #  # 3. Make the following program work.
 
-answer = input("What is the name of Poe Dameron's Droid? ")
-if a = "BB8"
-    print("Correct!")
-else
-    print("Incorrect! It is BB8.")
+# answer = input("What is the name of Poe Dameron's Droid? ")
+# if answer == "BB8":
+#     print("Correct!")
+# else:
+#     print("Incorrect! It is BB8.")
 
  #
  #  # 4. Make the following program work.
  #
- #     x = input("Name one of the top 3 greatest Jedi.")
- #     if jedi == Yoda or Luke Skywalker or Obi-Wan Kenobi:
- #         print "That is correct!"
- #
+# jedi = input("Name one of the top 3 greatest Jedi.")
+# if jedi == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":
+#     print ("That is correct!")
+
  #
  #
  # # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
