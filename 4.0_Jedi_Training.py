@@ -26,8 +26,10 @@
 
 
   # 4. Make the following program work.
-     
-?
+
+jedi = input("Name one of the top 3 greatest Jedi.")
+if jedi == "Yoda" or jedi == "Luke Skywalker" or jedi == "Obi-Wan Kenobi":
+    print("That is correct!")
 
 
 
