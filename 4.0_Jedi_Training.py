@@ -35,19 +35,20 @@
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
 
-    print("Welcome to the Jedi Academy!")
-
-    print("A. Jedi Master")
-    print("B. Sith Lord")
-    print("C. Droid")
+print("Welcome to the Jedi Academy!")
+print("A. Jedi Master")
+print("B. Sith Lord")
+print("C. Droid")
 
 user_input = input("Choose a character?")
 
-if user_input = A:
-         sensitivity = 1000
-else if user_input = B:
-         sensitivity = 900
-else if user_input = C:
-         sensitivity = 0
+if user_input == "A":
+   sensitivity = 1000
+elif user_input == "B":
+   sensitivity = 900
+elif user_input == "C":
+   sensitivity = 0
 
-print("Sensitivity: ",Sensitivity)
+print("Sensitivity: ",sensitivity)
+
+
