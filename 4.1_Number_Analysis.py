@@ -39,7 +39,7 @@ else:
 # else :
 #     print("Your number is negative")
 
-if n < -100 or n > 100:
-    print("Your number is Exclusive")
-else:
+if n >=-100 and n<=100:
     print("Your number is Inclusive")
+else:
+    print("Your number is Exclusive")
