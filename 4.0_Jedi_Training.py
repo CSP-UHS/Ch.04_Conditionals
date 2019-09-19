@@ -42,11 +42,11 @@ print("C. Droid")
 
 user_input = input("Choose a character?")
 
-if user_input == "A":
+if user_input == "A" or "a":
     sensitivity = 1000
-elif user_input == "B":
+elif user_input == "B" or "b":
     sensitivity = 900
-elif user_input == "C":
+elif user_input == "C" or "c":
     sensitivity = 0
 
-print("Sensitivity: ", user_input )
+print("Sensitivity: ", sensitivity )
