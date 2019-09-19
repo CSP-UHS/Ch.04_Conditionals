@@ -24,19 +24,20 @@ print("Give me a number and ill determine if it is Odd, Even, Positive, Negative
 n = int(input("Whats your Number?\n"))
 
 if n%2 == 1:
-    print("Your number is Even")
-else :
     print("Your number is Odd")
-
-if n == 0:
-    print("Your number is Zero")
 else :
-    print("Your number is not Zero")
+    print("Your number is Even")
 
-if n-abs(n) == 0:
-    print("your number is negative")
-else :
+if n > 0:
     print("Your number is positive")
+elif n < 0:
+    print("Your number is negative")
+else:
+    print("Your number is Zero")
+# if n-abs(n) == 0:
+#     print("your number is positive")
+# else :
+#     print("Your number is negative")
 
 if n < -100 or n > 100:
     print("Your number is Exclusive")
