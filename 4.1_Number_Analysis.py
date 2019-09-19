@@ -37,3 +37,8 @@ if n-abs(n) == 0:
     print("your number is negative")
 else :
     print("Your number is positive")
+
+if n < -100 or n > 100:
+    print("Your number is Exclusive")
+else:
+    print("Your number is Inclusive")
