@@ -29,7 +29,7 @@ else :
     print("Your number is Odd")
 
 if n == 0:
-    print("Your number is Sero")
+    print("Your number is Zero")
 else :
     print("Your number is not Zero")
 
