@@ -34,7 +34,7 @@
 
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
-     
+ #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
      print("Welcome to the Jedi Academy!")
 
      print("A. Jedi Master")
