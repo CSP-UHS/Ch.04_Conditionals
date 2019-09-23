@@ -19,7 +19,7 @@ if x == 3:
   # 3. Make the following program work. (4 mistakes)
 
 answer = input("What is the name of Poe Dameron's Droid? ")
-if answer == "BB8":
+if answer.lower() == "bb8":
     print("Correct!")
 else:
     print("Incorrect! It is BB8.")
@@ -50,9 +50,9 @@ if user_input.lower() == "a" or  user_input.lower() == "jedi master":
 elif user_input.lower() == "b" or user_input.lower() == "sith lord":
     sensitivity = 900
 elif user_input.lower() == "c" or  user_input.lower() == "droid":
-    ensitivity = 0
+    sensitivity = 0
 else:
-    sensitivity = "0"
+    sensitivity = " "
     print("Not a choice!")
 
 print("Sensitivity: ",sensitivity)

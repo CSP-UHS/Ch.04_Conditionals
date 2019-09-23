@@ -11,3 +11,14 @@ Exam_Worth=Exam_Worth/100
 x=1-Exam_Worth
 Final_Grade=(Sem_Grade* x)+(Final_Exam*Exam_Worth)
 print(Final_Grade)
+
+if Final_Grade > 93:
+    print("You got an A!")
+elif Final_Grade < 40:
+    print("You got an F! Transfer to Johnston!")
+elif Final_Grade > 40 and Final_Grade <60:
+    print("You got a D!")
+elif Final_Grade > 60 and Final_Grade < 70:
+    print("You got a C!")
+elif Final_Grade > 70 and Final_Grade < 93:
+    print("You got a B!")
