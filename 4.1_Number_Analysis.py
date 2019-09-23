@@ -21,14 +21,19 @@
 a = float(input("Enter in an odd or even number to be analyzed:"))
 if a % 2 == 0:
     print("this number is even")
+else:
+    print("this number is odd")
 if a > 0:
     print("this number is positive")
-if a == 0:
-    print("this number is zero")
-if a < 0:
+elif a < 0:
     print("this number is negative")
-else -100 :
-    print("this number is odd")
+elif a == 0:
+    print("this number is zero")
+if a < 100 and a > -100:
+    print("this number is inclusive")
+else:
+    print("This number is exclusive")
+
 
 
 
