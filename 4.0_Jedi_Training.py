@@ -39,20 +39,21 @@ print("Welcome to the Jedi Academy!")
 
 print("A. Jedi Master")
 print("B. Sith Lord")
-print("C. Droid")
+print("C. Droid\n")
 
-user_input = input("Choose a character?")
+user_input = input("Choose a character?\n")
 
-if user_input == "A" or "a":
+if user_input == "A" or user_input.lower() == "a":
     sensitivity = 1000
-elif user_input == "B" or "b":
+elif user_input == "B" or user_input.lower() == "b":
     sensitivity = 900
-elif user_input == "C" or "c":
+elif user_input == "C" or user_input.lower() == "c":
     sensitivity = 0
-
-# else:
-#     sensitivity = ("")
-#     print("Not a choice!")
-
+else:
+    sensitivity = (" ")
+    print("Not a choice!\n")
 
 print("Sensitivity: ", sensitivity )
+
+
+
