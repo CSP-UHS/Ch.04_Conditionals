@@ -34,6 +34,7 @@
 
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
+ # print not a choice if they dont choose any of the three and set sensitivity to blank text
 
 print("Welcome to the Jedi Academy!")
 print("A. Jedi Master")
@@ -48,7 +49,8 @@ elif user_input == "B":
    sensitivity = 900
 elif user_input == "C":
    sensitivity = 0
+else:
+   sensitivity = " "
+
 
 print("Sensitivity: ",sensitivity)
-
-
