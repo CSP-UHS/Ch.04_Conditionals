@@ -14,26 +14,28 @@ print("Space Invaders")
 print("Pizza")
 print("Comic Book")
 
-answer = input("Which is true?? : ")
+answer = input("\nWhich is true?? : ")
 end_score = 0
 
-if answer.upper() == "Space Invaders" or answer.lower() == "space invaders" :
-    end_score+=1
+if answer.upper() == "Pizza" or answer.lower() == "pizza":
+    end_score+= 1
 else:
     print("Oops Better luck next time!\n")
 
-# print("2. What is considered very rude and insulting in japanese restaurants\n")
+print("\n2. What is considered very rude and insulting in japanese restaurants\n")
+
+print("Farting")
+print("Tipping")
+print("Coughing")
+
+answer = input("Whats your answer? : ")
+
+if answer.upper() == "Tipping" or answer.lower() == "tipping" :
+    end_score+=1
+else:
+    print("Oops Better luck next time!\n")
 #
-# print("Farting")
-# print("Tipping")
-# print("Coughing")
-#
-# if answer.upper() == "Tipping" or answer.lower() == "tipping" :
-#     end_score+=1
-# else:
-#     print("Oops Better luck next time!\n")
-#
-# print("3. What do Fifteen percent of Women do during Valentines day\n?")
+# print("\n3. What do Fifteen percent of Women do during Valentines day\n?")
 #
 # print("A. Eat chocolate")
 # print("B. hang out with their significant other")
