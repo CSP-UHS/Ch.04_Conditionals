@@ -27,7 +27,7 @@ if number > 0:
     print("This number is positive.")
 else:
     print("This number is negative.")
-if number < 100 and number > -100:
+if number <= 100 and number >= -100:
     print("This number is inclusive.")
 else:
     print("This number is exclusive.")
