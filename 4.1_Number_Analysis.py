@@ -18,3 +18,24 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+
+print("Welcome to my number analysis program!")
+num=int(input("Please enter a number: "))
+print("I am going to analyze your number and tell you the results.")
+
+if (num % 2) == 0:
+    print("Test 1: Even")
+else:
+    print("Test 1: Odd")
+
+if num > 0:
+    print("Test 2: Positive")
+elif num < 0:
+    print("Test 2: Negative")
+else:
+    print("Test 2: Zero")
+
+if num >= -100 and num <= 100:
+    print("Test 3: Inclusive")
+else:
+    print("Test 3: Exclusive")
