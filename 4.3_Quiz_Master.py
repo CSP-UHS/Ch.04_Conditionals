@@ -42,7 +42,7 @@ print("A. Eat chocolate")
 print("B. hang out with their significant other")
 print("C. Send themselves flowers\n")
 
-answer = input("What is your answer? : ")
+answer = input("What is your answer? A, B or C?? : ")
 
 if answer.upper() == "C" or answer.lower() == "c" :
     end_score+=1
