@@ -2,10 +2,10 @@
 
   #1. Make the following program work. (3 mistakes)
      
-     midichlorians = float(input("Enter midichlorian count: ")
-     if midichlorians > 10000
+m = int(input("Enter midichlorian count: ")
+    if: m > 10000
          print("You have serious Jedi potential")
-     elif:
+    else:
          print("Jedi, you will never be.")
 
 
