@@ -1,13 +1,13 @@
 # Sign your name:________________
-
+'''
   #1. Make the following program work. (3 mistakes)
-     
-m = int(input("Enter midichlorian count: ")
-    if: m > 10000
-         print("You have serious Jedi potential")
-    else:
-         print("Jedi, you will never be.")
+m = int(input("Enter midichlorian count: "))
 
+if m > 10000 :
+     print("You have serious Jedi potential")
+else:
+     print("Jedi, you will never be.")
+'''
 
  # 2. Make the following program work. (3 mistakes)
      
@@ -15,7 +15,7 @@ m = int(input("Enter midichlorian count: ")
      if x = 3
          print("You entered 3")
 
-
+'''
   # 3. Make the following program work. (4 mistakes)
      
      answer = input("What is the name of Poe Dameron's Droid? ")
@@ -52,3 +52,4 @@ m = int(input("Enter midichlorian count: ")
          sensitivity = 0
 
      print("Sensitivity: ",Sensitivity)
+'''
