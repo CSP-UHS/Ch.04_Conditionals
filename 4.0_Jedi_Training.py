@@ -1,53 +1,60 @@
-# Sign your name:________________
+# Sign your name:Henry Hmar
 
   #1. Make the following program work.
-     
-     midichlorians = float(input("Enter midichlorian count: ")
-     if midichlorians > 10000
-         print("You have serious Jedi potential")
-     elif:
-         print("Jedi, you will never be.")
+
+midichlorians = float(input("Enter midichlorian count: "))
+if midichlorians > 10000:
+                        print("You have serious Jedi potential")
+else:
+    print("Jedi, you will never be.")
 
 
  # 2. Make the following program work.
      
-     x = input("Enter a number: ")
-     if x = 3
-         print("You entered 3")
+x = int(input("Enter a number: "))
+if x == 3:
+    print("You entered 3")
+else:
+    print("ok")
 
 
   # 3. Make the following program work. 
-     
-     answer = input("What is the name of Poe Dameron's Droid? ")
-     if a = "BB8":
+
+answer = input("What is the name of Poe Dameron's Droid? ")
+if answer == "BB8":
          print("Correct!")
-         else
+else:
          print("Incorrect! It is BB8.")
 
 
   # 4. Make the following program work.
      
-     x = input("Name one of the top 3 greatest Jedi.")
-     if jedi == Yoda or Luke Skywalker or Obi-Wan Kenobi:
-         print "That is correct!"
+jedi = str(input("Name one of the top 3 greatest Jedi."))
+if jedi.lower() == "yoda" or jedi.lower() == "luke skywalker" or jedi.lower() == "obi-wan kenobi":
+    print("That is correct!")
+else:
+    print("Wrong")
 
 
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
-     
-     print("Welcome to the Jedi Academy!")
+ #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
+print("Welcome to the Jedi Academy!")
 
-     print("A. Jedi Master")
-     print("B. Sith Lord")
-     print("C. Droid")
+print("A. Jedi Master")
+print("B. Sith Lord")
+print("C. Droid")
 
-     user_input = input("Choose a character?")
+user_input = input("Choose a character?")
 
-     if user_input = A:
+if user_input.lower() == "a":
          sensitivity = 1000
-     else if user_input = B:
+         print("Sensitivity: ", sensitivity)
+elif user_input.lower() == "b":
          sensitivity = 900
-     else if user_input = C:
+         print("Sensitivity: ", sensitivity)
+elif user_input.lower() == "c":
          sensitivity = 0
-
-     print("Sensitivity: ",Sensitivity)
+         print("Sensitivity: ", sensitivity)
+else:
+    print("Not a choice")
