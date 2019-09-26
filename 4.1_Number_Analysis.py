@@ -18,3 +18,9 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+Number=float(input("what is your number?"))
+
+if Number >= -100 and Number <= 100:
+    print("this number is inclusive")
+elif Number >100 or Number <-100:
+    print("This number is not inclusive")
