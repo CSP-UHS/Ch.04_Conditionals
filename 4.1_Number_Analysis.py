@@ -28,11 +28,14 @@ else:
 
 if UserInput>0:
     print("Your number is positive.")
-if UserInput<0:
+elif UserInput<0:
     print("Your number is negetive.")
 else:
     print("Your number is zero.")
 
-
+if UserInput >= -100 and UserInput <= 100:
+    print("Your number is inclusively between -100 and 100.")
+else:
+    print("Your number is not between -100 and 100.")
 
 
