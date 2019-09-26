@@ -13,13 +13,14 @@ FinalWeighted=FinalExamWorth/100
 GradeThatCounts = SemesterGrade*(1-FinalWeighted)+FinalExamScore*(FinalWeighted)
 print("Your grade that counts is", GradeThatCounts)
 
-If GradeThatCounts>= 90:
+if GradeThatCounts >= 90:
     print("Thats an A!")
-elif GradeThatCounts>= 80:
+elif GradeThatCounts >= 80:
     print("Thats an B!")
-elif GradeThatCounts>= 70:
+elif GradeThatCounts >= 70:
     print("Thats an C!")
-elif GradeThatCounts>= 60:
-    print("Thats an B!")
+elif GradeThatCounts >= 60:
+    print("Thats an D!")
 else:
-    print("You failed, transfer to Johnston you clown!")
+    print("Thats an F, transfer to Johnston you clown!")
+
