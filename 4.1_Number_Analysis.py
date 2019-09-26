@@ -18,3 +18,21 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+
+UserInput=float(input("What is your lucky number?"))
+OddEven = UserInput % 2
+if OddEven != 0:
+    print(" Your number is odd.")
+else:
+    print("Your number is even")
+
+if UserInput>0:
+    print("Your number is positive.")
+if UserInput<0:
+    print("Your number is negetive.")
+else:
+    print("Your number is zero.")
+
+
+
+
