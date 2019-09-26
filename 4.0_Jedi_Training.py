@@ -1,53 +1,59 @@
 # Sign your name:________________
 
   #1. Make the following program work.
-     
-     midichlorians = float(input("Enter midichlorian count: ")
-     if midichlorians > 10000
-         print("You have serious Jedi potential")
-     elif:
-         print("Jedi, you will never be.")
+
+midichlorians = int(input("Enter midichlorian count: "))
+if midichlorians > 10000:
+     print("You have serious Jedi potential")
+else:
+     print("Jedi, you will never be.")
 
 
  # 2. Make the following program work.
-     
-     x = input("Enter a number: ")
-     if x = 3
-         print("You entered 3")
+
+x = input("Enter a number: ")
+if x == 3:
+    print("You entered 3")
 
 
   # 3. Make the following program work. 
      
-     answer = input("What is the name of Poe Dameron's Droid? ")
-     if a = "BB8":
-         print("Correct!")
-         else
+answer = input("What is the name of Poe Dameron's Droid? ")
+if answer == "BB8":
+    print("Correct!")
+else:
          print("Incorrect! It is BB8.")
 
 
   # 4. Make the following program work.
-     
-     x = input("Name one of the top 3 greatest Jedi.")
-     if jedi == Yoda or Luke Skywalker or Obi-Wan Kenobi:
-         print "That is correct!"
+
+x = input("Name one of the top 3 greatest Jedi.")
+if x == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":
+         print("That is correct!")
 
 
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
-     
-     print("Welcome to the Jedi Academy!")
 
-     print("A. Jedi Master")
-     print("B. Sith Lord")
-     print("C. Droid")
+print("Welcome to the Jedi Academy!")
 
-     user_input = input("Choose a character?")
+print("A. Jedi Master")
+print("B. Sith Lord")
+print("C. Droid")
 
-     if user_input = A:
-         sensitivity = 1000
-     else if user_input = B:
-         sensitivity = 900
-     else if user_input = C:
-         sensitivity = 0
+user_input = input("Choose a character?")
 
-     print("Sensitivity: ",Sensitivity)
+if user_input.upper() == "A" or user_input.upper() == "JEDI MASTER":
+    Sensitivity = 1000
+
+elif user_input == "B" or user_input.upper() == "SITH LORD":
+    Sensitivity = 900
+
+elif user_input == "C" or user_input.upper() == "DROID":
+    Sensitivity = 0
+else:
+    print("Not a choice!")
+    Sensitivity = None
+
+print("Sensitivity: ",Sensitivity)
+
