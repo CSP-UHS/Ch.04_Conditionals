@@ -16,7 +16,7 @@ if x == 3:
 else:
     print("You did not enter 3.")
 
-# 3. Make the following program work. (4 mistakes)------------------------Left off Here-------------------------------
+# 3. Make the following program work. (4 mistakes)------------------------Left off Here--------------------------------
 
 answer = input("What is the name of Poe Dameron's Droid? ")
 if a = "BB8":
