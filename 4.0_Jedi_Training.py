@@ -10,10 +10,10 @@ else:
 '''
 
  # 2. Make the following program work. (3 mistakes)
-     
-     x = input("Enter a number: ")
-     if x = 3
-         print("You entered 3")
+x = input("Enter a number: ")
+    if x = 3:
+        print("You entered 3")
+    else: print("you entered",x)
 
 '''
   # 3. Make the following program work. (4 mistakes)
