@@ -10,13 +10,13 @@ else:
 
     # 2. Make the following program work.
 
-x = str(input("Enter a number: "))     #On this one when I left------------------------
+x = float(input("Enter a number: "))
 if x == 3:
     print("You entered 3.")
 else:
     print("You did not enter 3.")
 
-# 3. Make the following program work. (4 mistakes)
+# 3. Make the following program work. (4 mistakes)------------------------Left off Here-------------------------------
 
 answer = input("What is the name of Poe Dameron's Droid? ")
 if a = "BB8":
@@ -50,5 +50,3 @@ else if user_input = C:
     sensitivity = 0
 
 print("Sensitivity: ", Sensitivity)
-
-
