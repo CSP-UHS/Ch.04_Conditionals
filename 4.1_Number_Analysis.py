@@ -18,3 +18,24 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+x=int(input("Give me a number for analyzing"))
+if x % 2 == 0:
+    Test1 = "Even"
+else:
+    Test1= "Odd"
+
+if x<0 :
+    Test2 = "Negative"
+elif x>0:
+    Test2 = "Positive"
+else:
+    Test2 = "Neither, 0"
+
+if x<-100 or x>100:
+    Test3 = "Exclusive"
+else:
+    Test3 = "Inclusive"
+
+print("Your number is",Test1)
+print(Test2)
+print(Test3)
