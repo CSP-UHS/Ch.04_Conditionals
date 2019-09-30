@@ -19,7 +19,7 @@ else:
 # 3. Make the following program work.
 
 answer = str(input("What is the name of Poe Dameron's Droid? "))
-if answer == "BB8":
+if answer.upper() == "BB8":
     print("Correct!")
 else:
     print("Incorrect! It is BB8.")
@@ -45,11 +45,11 @@ user_input = str(input("Choose a character."))
 
 if user_input.lower() == "a" or user_input.lower() == "jedi master":
     sensitivity = 1000
-else if user_input.lower() == "b" or user_input.lower() == "sith lord":
+elif user_input.lower() == "b" or user_input.lower() == "sith lord":
     sensitivity = 900
-else if user_input.lower() == "c" or user_input.lower() == "droid":
+elif user_input.lower() == "c" or user_input.lower() == "droid":
     sensitivity = 0
 else:
-    sensitivity = " "
+    sensitivity = None
 
-print("Sensitivity: ", sensitivity)
+print("Your sensitivity is", sensitivity)
