@@ -32,8 +32,8 @@ if x == "Yoda" or x == "Luke Skywalker" or x == "Obi-Wan Kenobi":
 else:
     print("That is wrong.")
 
-  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
-    #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
+# 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
+#    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
 
 print("Welcome to the Jedi Academy!")
 
@@ -41,12 +41,13 @@ print("A. Jedi Master")
 print("B. Sith Lord")
 print("C. Droid")
 
-user_input = input("Choose a character.")
-if user_input == "A".lower() or user_input=="Jedi Master".lower():
-        sensitivity = 1000
-else if user_input == "B".lower() or user_input=="Sith Lord".lower():
+user_input = str(input("Choose a character."))
+
+if user_input.lower() == "a" or user_input.lower() == "jedi master":
+    sensitivity = 1000
+else if user_input.lower() == "b" or user_input.lower() == "sith lord":
     sensitivity = 900
-      else if user_input =="C".lower() or user_input =="Droid".lower():
+else if user_input.lower() == "c" or user_input.lower() == "droid":
     sensitivity = 0
 else:
     sensitivity = " "
