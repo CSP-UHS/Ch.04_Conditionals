@@ -18,3 +18,23 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+
+n=int(input("Number Analysis; Please input a number:"))
+if n%2 == 0:
+    thing1="Your number is even"
+else:
+    thing1="Your number is odd"
+if n < 0:
+    thing2 = "Your number is a negative"
+elif n>0:
+    thing2 = "Your number is positive"
+else:
+    thing2 = "Neither, 0"
+if n <- 100 or n > 100:
+    thing3="Your number is exclusive"
+else:
+    thing3="Your number is inclusive"
+
+print(thing1)
+print(thing2)
+print(thing3)
