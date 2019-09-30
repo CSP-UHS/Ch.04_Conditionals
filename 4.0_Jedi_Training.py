@@ -16,23 +16,24 @@ if x == 3:
 else:
     print("You did not enter 3.")
 
-# 3. Make the following program work. (4 mistakes)------------------------Left off Here--------------------------------
+# 3. Make the following program work.
 
-answer = input("What is the name of Poe Dameron's Droid? ")
-if a = "BB8":
+answer = str(input("What is the name of Poe Dameron's Droid? "))
+if answer == "BB8":
     print("Correct!")
-    else
+else:
     print("Incorrect! It is BB8.")
 
-# 4. Make the following program work. (4 mistakes)
+    # 4. Make the following program work.
 
-x = input("Name one of the top 3 greatest Jedi.")
-if jedi == Yoda or Luke Skywalker or Obi-Wan Kenobi:
-    print
-    "That is correct!"
+x = str(input("Name one of the top 3 greatest Jedi."))
+if x == "Yoda" or x == "Luke Skywalker" or x == "Obi-Wan Kenobi":
+    print ("That is correct!")
+else:
+    print("That is wrong.")
 
-# 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
-#    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
+  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
+    #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
 
 print("Welcome to the Jedi Academy!")
 
@@ -40,13 +41,14 @@ print("A. Jedi Master")
 print("B. Sith Lord")
 print("C. Droid")
 
-user_input = input("Choose a character?")
-
-if user_input = A:
-    sensitivity = 1000
-else if user_input = B:
+user_input = input("Choose a character.")
+if user_input == "A".lower() or user_input=="Jedi Master".lower():
+        sensitivity = 1000
+else if user_input == "B".lower() or user_input=="Sith Lord".lower():
     sensitivity = 900
-else if user_input = C:
+      else if user_input =="C".lower() or user_input =="Droid".lower():
     sensitivity = 0
+else:
+    sensitivity = " "
 
-print("Sensitivity: ", Sensitivity)
+print("Sensitivity: ", sensitivity)
