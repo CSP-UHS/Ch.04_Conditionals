@@ -18,3 +18,19 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+print("Welcome to the Number Analyzer")
+N=int(input("Enter any Number"))
+if N%2==0:
+    print("This number is even")
+else:
+    print("This number is odd")
+if N>0:
+    print("This number is Positive")
+elif N==0:
+    print("This number is a 0")
+else:
+    print("This number is Negative")
+if N<-100 or N>100:
+    print("This number is Exclusive")
+else:
+    print("This Number is Inclusicve")
