@@ -42,14 +42,16 @@ print("B. Sith Lord")
 print("C. Droid")
 
 user_input = str(input("Choose a character."))
+sentence.strip(user_input)
 
-if user_input.lower() == "a" or user_input.lower() == "jedi master":
+if user_input.lower() == "a" or user_input.lower(). == "jedimaster":
     sensitivity = 1000
 elif user_input.lower() == "b" or user_input.lower() == "sith lord":
     sensitivity = 900
 elif user_input.lower() == "c" or user_input.lower() == "droid":
     sensitivity = 0
 else:
+    print ("Not a choice.")
     sensitivity = None
 
 print("Your sensitivity is", sensitivity)
