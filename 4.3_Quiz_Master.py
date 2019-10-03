@@ -75,5 +75,16 @@ if UserInput.lower() == "optifine":
 else:
     print("Wrong, the right answer was Optifine.")
 
-
-
+PercentCorrect = NumberOfQuestionsCorrect/NumberOfQuestionsAnswered
+print("Thanks for taking the quiz.")
+Print("You scored an", PercentCorrect)
+if PercentCorrect >= 90:
+    print("Thats an A!")
+elif PercentCorrect >= 80:
+    print("Thats an B!")
+elif PercentCorrect >= 70:
+    print("Thats an C!")
+elif PercentCorrect >= 60:
+    print("Thats an D!")
+else:
+    print("Thats an F, go bac to Fortnite.")
