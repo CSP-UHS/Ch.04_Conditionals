@@ -18,3 +18,19 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+print("Welcome to Smith's Number Analysis Program")
+N=int(input("Enter any Number"))
+if N%2==0:
+    print("Test 1: Even")
+else:
+    print("Test 1: Odd")
+if N>0:
+    print("Test 2: Positive")
+elif N==0:
+    print("Test 2: Zero")
+else:
+    print("Test 2: Negative")
+if N<-100 or N>100:
+    print("Test 3: Exclusive")
+else:
+    print("Test 3: Inclusive")
