@@ -5,4 +5,18 @@ The criteria for the project are on the website. Make sure you test this quiz wi
 two of your student colleagues before you run it by your instructor.
 '''
 
-Print ("Thanks for taking my quiz about 21112")
+print ("Thanks for taking my quiz about Minecraft.")
+print("This won't be easy, only Minecraft pro's will get a perfect score.")
+
+NumberOfQuestionsAnswered = 0
+NumberOfQuestionsCorrect = 0
+
+print("Here is an easy one, who created Minecraft?")
+print("A, Notch. B, Steve. C, Pewdiepie. D, George Lucas")
+UserInput = str(input("Choose an answer: "))
+NumberOfQuestionsAnswered + 1
+if UserInput.lower() == "a" or UserInput.lower(). == "notch":
+    NumberOfQuestionsCorrect +1
+    print("Good job, but its only gonna get harder.")
+else:
+    print("That is wrong, go back to Fortnite.")
