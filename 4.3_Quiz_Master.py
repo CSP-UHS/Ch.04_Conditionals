@@ -75,9 +75,9 @@ if UserInput.lower() == "optifine":
 else:
     print("Wrong, the right answer was Optifine.")
 
-PercentCorrect = NumberOfQuestionsCorrect/NumberOfQuestionsAnswered
+PercentCorrect = NumberOfQuestionsCorrect / NumberOfQuestionsAnswered #Fix this line Friday
 print("Thanks for taking the quiz.")
-Print("You scored an", PercentCorrect)
+print("You scored an", PercentCorrect)
 if PercentCorrect >= 90:
     print("Thats an A!")
 elif PercentCorrect >= 80:
