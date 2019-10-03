@@ -49,12 +49,12 @@ user_input = input("Choose a character?")
 
 if user_input.lower() == "a":
          sensitivity = 1000
-         print("Sensitivity: ", sensitivity)
 elif user_input.lower() == "b":
          sensitivity = 900
-         print("Sensitivity: ", sensitivity)
 elif user_input.lower() == "c":
          sensitivity = 0
-         print("Sensitivity: ", sensitivity)
 else:
+    sensitivity=None
     print("Not a choice")
+
+print("Sensitivity: ", sensitivity)

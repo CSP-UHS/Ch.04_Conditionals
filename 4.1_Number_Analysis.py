@@ -18,3 +18,24 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+
+hi=int(input("Hey there!! You are here because you know the reason \n so enter some numbers"))
+
+# Determine if odd or even
+if (hi % 2) == 0:
+    print(hi , "is Even")
+else:
+    print(hi , "is Odd")
+
+#Positive, Negative or zero
+if hi > 0:
+    print("It is Positive")
+elif hi < 0:
+    print("It is Negative")
+else:
+    print("Your number is a zero")
+
+if hi>=-100 and hi <= 100:
+    print("Inclusive")
+else:
+    print("Exclusive")
