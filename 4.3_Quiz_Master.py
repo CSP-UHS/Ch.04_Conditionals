@@ -52,11 +52,11 @@ else:
 print()
 
 answer = input("Question #6\nTrue or False: The Fairy Godmother is Prince Charming's grandma. ")
-if answer.lower()=="true":
+if answer.lower()=="false":
     print(correct)
     number_correct+=1
 else:
-    print("Sorry, that is incorrect. The Fairy Godmother is Prince Charming's grandma.")
+    print("Sorry, that is incorrect. The Fairy Godmother is Prince Charming's mother.")
 print()
 
 answer = input("Question #7\nIn what language does Shrek mean monster? \nA. Italian\nB. Armenian\nC. Yiddish\nD. Swahili")
