@@ -15,8 +15,17 @@ print("Here is an easy one, who created Minecraft?")
 print("A, Notch. B, Steve. C, Pewdiepie. D, George Lucas")
 UserInput = str(input("Choose an answer: "))
 NumberOfQuestionsAnswered + 1
-if UserInput.lower() == "a" or UserInput.lower(). == "notch":
-    NumberOfQuestionsCorrect +1
+if UserInput.lower() == "a" or UserInput.lower() == "notch":
+    NumberOfQuestionsCorrect + 1
     print("Good job, but its only gonna get harder.")
 else:
     print("That is wrong, go back to Fortnite.")
+
+print("What version is Java Minecraft on as of October 3, 2019?")
+UserInput = str(input("Choose an answer: "))
+NumberOfQuestionsAnswered + 1
+if UserInput == "1.14" or UserInput == "1.14.4" or UserInput == "19w40a":
+    NumberOfQuestionsCorrect + 1
+    print("Correct.")
+else:
+    print("Incorrect.")
