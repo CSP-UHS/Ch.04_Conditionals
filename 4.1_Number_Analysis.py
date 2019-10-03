@@ -18,3 +18,16 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+n = int(input("put in a number for analysis"))
+a = n%2
+if a == 0:
+    type(float)
+    print("This Number is Even")
+else:
+    print("this number is odd")
+if n<0:
+    print("this number is negative")
+elif 0
+print("this number is zero")
+
+
