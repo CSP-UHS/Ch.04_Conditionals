@@ -21,7 +21,7 @@ else:
   # 3. Make the following program work. 
      
 answer = input("What is the name of Poe Dameron's Droid? ")
-if answer == "BB8":
+if answer.upper() == "BB8":
     print("Correct!")
 else:
     print("Incorrect! It is BB8.")
@@ -52,4 +52,7 @@ elif user_input.lower() == "b" or user_input.lower() == "sith lord":
     sensitivity = 900
 elif user_input.lower() == "c" or user_input.lower() == "droid":
     sensitivity = 0
+else:
+    sensitivity = ""
+    print("Not a choice!")
 print("Sensitivity =",sensitivity)
