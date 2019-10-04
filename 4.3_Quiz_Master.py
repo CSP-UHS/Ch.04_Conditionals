@@ -50,7 +50,7 @@ else:
 print("True or False, all platforms where Minecraft has been released are able to do cross platform play.")
 UserInput = str(input("Choose an answer: "))
 NumberOfQuestionsAnswered = NumberOfQuestionsAnswered + 1
-if UserInput.lower() == "false" or UserInput.lower() == "no":
+if UserInput.lower() == "false" or UserInput.lower() == "no" or UserInput.lower() == "f":
     NumberOfQuestionsCorrect = NumberOfQuestionsCorrect + 1
     print("Good job.")
 else:
