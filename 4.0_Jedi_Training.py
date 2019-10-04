@@ -20,7 +20,7 @@ if x == 3:
   # 3. Make the following program work. (4 mistakes)
      
 answer = input("What is the name of Poe Dameron's Droid? ")
-if answer =="BB8":
+if answer.upper() =="BB8":
     print("Correct!")
 else:
     print("Incorrect! It is BB8.")
@@ -29,7 +29,7 @@ else:
   # 4. Make the following program work. (4 mistakes)
      
 x = input("Name one of the top 3 greatest Jedi.")
-if x == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":
+if x.lower() == "yoda" or x.lower()== "luke skywalker" or x.lower()== "obi-Wan kenobi":
     print("That is correct!")
 
 
