@@ -79,12 +79,12 @@ PercentCorrect = NumberOfQuestionsCorrect / NumberOfQuestionsAnswered
 print("Thanks for taking the quiz.")
 print("You scored an", PercentCorrect)
 if PercentCorrect >= .90:
-    print("Thats an A.")
+    print("That's an A.")
 elif PercentCorrect >= .80:
-    print("Thats an B.")
+    print("That's an B.")
 elif PercentCorrect >= .70:
-    print("Thats an C.")
+    print("That's an C.")
 elif PercentCorrect >= .60:
-    print("Thats an D.")
+    print("That's an D.")
 else:
-    print("Thats an F.")
+    print("That's a F.")
