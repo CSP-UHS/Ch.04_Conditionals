@@ -26,10 +26,11 @@ if a.lower() == ("a") or a.lower() == ("cave game"):
 else:
     print()
     print("Incorrect")
+    print("The correct answer was: A. Cave Game")
 print()
 print("When was the game released?")
 print()
-print("A.  2011")
+print("A.  2009")
 print("B.  2005")
 print("C.  2007")
 print()
@@ -41,6 +42,7 @@ if a.lower() == ("a") or a.lower() == ("2011"):
 else:
     print()
     print("Incorrect")
+    print("The correct answer was: A. 2009")
     w += 1
 print()
 print("How many dyes are in the game?")
@@ -53,6 +55,7 @@ if a.upper() == "20":
 else:
     print()
     print("Incorrect")
+    print("The correct answer was: 20")
     w += 1
 print()
 print("What is the rarest ore to get while mining?")
@@ -64,6 +67,7 @@ if a.lower() == ("emeralds") or a.lower() == ("emerald ore") or a.lower() == ("e
 else:
     print()
     print("Incorrect")
+    print("The correct answer was: Emeralds")
     w += 1
 print()
 print("What is the final boss of the game?")
@@ -80,6 +84,7 @@ if a.lower() == ("c") or a.lower() == ("the ender dragon"):
 else:
     print()
     print("Incorrect")
+    print("The correct answer was: C. The Ender Dragon")
     w += 1
 print()
 print("What is the best food source in the game?")
@@ -96,6 +101,7 @@ if a.lower() == ("b") or a.lower() == ("golden carrots"):
 else:
     print()
     print("Incorrect")
+    print("The correct answer was: B. Golden Carrots")
     w += 1
 print()
 print("Which portal requires obsidian to work?")
@@ -108,6 +114,7 @@ if a.lower() == ("the nether portal") or a.lower() == ("nether") or a.lower() ==
 else:
     print()
     print("Incorrect")
+    print("The correct answer was: The Nether Portal")
     w += 1
 print()
 print("What does the observer do?")
@@ -124,17 +131,20 @@ if a.lower() == ("b") or a.lower() == ("watches for block updates"):
 else:
     print()
     print("Incorrect")
+    print("The correct answer was: B. Watches for block updates")
     w+= 1
 
 grade = 100*(c/(c+w))
 grade//=1
-print("Your score is: ",grade,"%")
+
 
 if grade == 80:
+    print("Your score is: ", grade, "%")
     print("You are a true")
     print(" EPIC GAMER")
 elif grade > 80 and grade < 100:
-    print("You are close, wise one.")
+    print("Your score is: ", grade, "%")
+    print("You are close, Steve.")
 else:
     print()
     print()
@@ -142,9 +152,9 @@ else:
     print("             You     died!")
     print()
     print()
-    print("               Score: 0")
+    print("              Score:",int(grade))
     print()
     print()
-    print("                Respawn")
+    print("               Respawn")
     print()
-    print("              Title screen")
+    print("             Title screen")
