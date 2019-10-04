@@ -27,7 +27,13 @@ else:
     print("this number is odd")
 if n<0:
     print("this number is negative")
-elif 0
-print("this number is zero")
-
+elif n==0:
+    print("this number is zero")
+else:
+    print("this number is positive")
+if n >100 or n<-100:
+    print("this number is exclusive")
+else:
+    print("this number inclusive")
+    
 
