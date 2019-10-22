@@ -4,12 +4,14 @@ QUIZ MASTER PROJECT
 The criteria for the project are on the website. Make sure you test this quiz with 
 two of your student colleagues before you run it by your instructor.
 '''
-print("welcome to my quzi about random things")
+print("welcome to my quiz about random things")
 ans = input("are you ready to begin?""        a. yes"
             "       b. no")
 if ans == (str("a"))or("A"):
     print("have fun all your data will be stolen and sold to the highest bidder")
 else:
+    print("Then stop wasting my time")
+    exit()
 
 
 
@@ -43,6 +45,10 @@ else:
     print("NOPE")
 d = input("What is your name?")
 print("Imagine carrying around in your stomach for 9 months just to name it",d)
+e = int(input("how long is one day"
+              "      a. 12 hours"
+              "      b. 24 hours"
+              "      c. 23 hours 56 minutes and 4 seconds"))
 
 
 
