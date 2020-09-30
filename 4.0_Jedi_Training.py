@@ -21,22 +21,25 @@
      answer = input("What is the name of Poe Dameron's Droid? ")
      if a = "BB8":
          print("Correct!")
-         else
+     elif a[0]=="B" || a[1]=="B" || a[2]=="8":
+         print("Close, but not a true Jedi")
+     else
          print("Incorrect! It is BB8.")
 
 
   # 4. Make the following program work. (4 mistakes)
      
-     x = input("Name one of the top 3 greatest Jedi.")
-     if jedi == Yoda or Luke Skywalker or Obi-Wan Kenobi:
-         print "That is correct!"
+     jedi = input("Name one of the top 3 greatest Jedi (not case sensitive): ")
+     jedi=jedi.lower()                      
+     if jedi == "yoda" or "luke skywalker" or "obi-wan kenobi":
+         print ("That is correct!")
 
 
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
  #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
      
-     print("Welcome to the Jedi Academy!")
+     print("\nWelcome to the Jedi Academy!")
 
      print("A. Jedi Master")
      print("B. Sith Lord")
