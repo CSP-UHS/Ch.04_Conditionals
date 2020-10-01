@@ -18,3 +18,24 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+inputnumber =input("Give a number: ")
+
+#test one
+if int(inputnumber) % 2 == 0:
+    print ("Test 1: Even")
+else:
+    print ("Test 1: Odd")
+
+#test two
+if int(inputnumber) > 0:
+    print ("Test 2: Positive")
+elif int(inputnumber) == 0:
+    print ("Test 2: Zero")
+else:
+    print("Test 2: Negative")
+
+#test three
+if int(inputnumber) > -100 and int(inputnumber) < 100:
+    print("Test 3: Inclusive")
+else:
+    print("Test 3: Exclusive")
