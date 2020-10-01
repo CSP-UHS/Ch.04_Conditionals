@@ -30,11 +30,11 @@ elif Final>=73:
 elif Final>=70:
     print("you got a C- Might wanna retake")
 elif Final>=67:
-    print("you got a D+ your gonna need to retake")
+    print("you got a D+ you're gonna need to retake")
 elif Final>=63:
-    print("you got a D your gonna need to retake")
+    print("you got a D you're gonna need to retake")
 elif Final>=60:
-    print("you got a D- your gonna need to retake")
+    print("you got a D- you're gonna need to retake")
 elif Final<60:
     print("you got a F you better transfer to Johnston!")
 print("This is your final grade",Final)
