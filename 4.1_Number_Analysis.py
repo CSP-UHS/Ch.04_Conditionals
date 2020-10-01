@@ -22,9 +22,9 @@ Out:  Test 1: Odd
 number = int(input('Please enter a number: '))
 
 if number%2 == 1: #if the number is odd
-    print(str(number)+' is an odd number')
+    print('\n'+str(number)+' is an odd number')
 else:
-    print(str(number)+' is an even number')
+    print('\n'+str(number)+' is an even number')
 
 if number > 0:
     print(str(str(number)+' is positive'))
