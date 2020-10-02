@@ -1,4 +1,4 @@
-# Sign your name:________________
+ # Sign your name:________________
 
   #1. Make the following program work. (3 mistakes)
 '''
@@ -44,11 +44,13 @@ else:                                                           # Removed Indent
      if jedi == Yoda or Luke Skywalker or Obi-Wan Kenobi:
          print "That is correct!"
 '''
-
+jedi = input("Name one of the top 3 greatest Jedi.")
+if jedi == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":      # Added "" for all conditions
+    print ("That is correct!")                                  # Added ()
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
  #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
-     
+'''
      print("Welcome to the Jedi Academy!")
 
      print("A. Jedi Master")
@@ -65,3 +67,24 @@ else:                                                           # Removed Indent
          sensitivity = 0
 
      print("Sensitivity: ",Sensitivity)
+'''
+sensitivity = 0                                                         # Created a variable to use
+print("Welcome to the Jedi Academy!")
+
+print("A. Jedi Master")
+print("B. Sith Lord")
+print("C. Droid")
+
+user_input = str(input("Choose a character?"))
+
+if user_input.upper() == "A" or user_input.upper() == "JEDI MASTER":    # Integrated or statments
+    sensitivity = 1000                                                  # and either upper or lower cases
+elif user_input.upper() == "B" or user_input.upper() == "SITH LORD":
+    sensitivity = 900
+elif user_input.upper() == "C" or user_input.upper() == "DROID":
+    sensitivity = 0
+else:
+    print("Not a choice!")
+    sensitivity = -1
+if sensitivity != -1:                                                   # Added conditional to not print sens
+    print("Sensitivity: ", sensitivity)                                 # if an incorrect answer
