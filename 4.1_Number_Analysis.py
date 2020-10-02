@@ -18,3 +18,19 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+ans = int(input("Pick a number:"))
+ans_mod = ans%2
+
+print("Your number is :")
+if ans >= 0:
+    print("Positive:")
+else:
+    print("Negative")
+if ans_mod == 0:
+    print("Even")
+else:
+    print("Odd")
+if 100 >= ans >= -100:
+    print("Between 100 and -100")
+else:
+    print("Not between 100 and -100")
