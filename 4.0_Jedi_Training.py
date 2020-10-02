@@ -19,7 +19,7 @@ if x == 3:          # use ==    ,    added colon
   # 3. Make the following program work. (4 mistakes)
      
 answer = input("What is the name of Poe Dameron's Droid? ")  #indentation errors
-if answer.upper() == "BB8" or "BB-8":                 # use ==, change to correct variable, add colon
+if answer.upper() == "BB8" or answer.upper() == "BB-8":                 # use ==, change to correct variable, add colon
     print("Correct!")
 else:
     print("Incorrect! It is BB8.")
@@ -28,7 +28,7 @@ else:
   # 4. Make the following program work. (4 mistakes)
      
 jedi = input("Name one of the top 3 greatest Jedi. ")       # change variable from x to jedi so they match
-if jedi.upper() == 'YODA' or 'LUKE SKYWALKER' or 'OBI-WAN KENOBI':  # ==, make the answers strings
+if jedi.upper() == 'YODA' or jedi.upper() == 'LUKE SKYWALKER' or jedi.upper() == 'OBI-WAN KENOBI':  # ==, make the answers strings
     print("That is correct!")      #put print statement in parenthesis
 
 
