@@ -73,4 +73,20 @@ if answer.upper() == 'A' or answer.upper() == 'PC':
 else:
     incorrect()
 
-print(count)
+percentage = (count/8)*100
+
+text = 'Your quiz grade is '
+if percentage >= 90:                                       #Dont make me comment the if/else because you and I both know how they work
+    print('\nCongratulations! '+text+'an A, '+str(percentage)+'%')
+
+elif percentage < 90 and percentage >= 80:
+    print('\n'+text+'a B, '+str(percentage)+'%')
+
+elif percentage < 80 and percentage >= 70:
+    print('\n'+text+'a C, '+str(percentage)+'%')
+
+elif percentage <70 and percentage >= 60:
+    print('\n'+text+'a D, '+str(percentage)+'%')
+
+else:
+    print('\n'+text+str(percentage)+"%.  I honestly don't know how you got here either.")
