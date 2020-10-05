@@ -18,3 +18,5 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+num=input("Enter Number: ")
+if num
