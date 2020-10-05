@@ -9,7 +9,12 @@ What day did 9/11 happen?
 a,9/11
 What year did WW2 end?
 a,1945
-Do you use PC or console?
+Do you use PC or console for gaming?
 a, PC
+Do you have a girlfriend?
+a, no
 
+Obama?
+a, Obama
 '''
+start=input("Start? Y")
