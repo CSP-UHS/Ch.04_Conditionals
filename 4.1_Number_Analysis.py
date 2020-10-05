@@ -18,13 +18,13 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
-input = int(input("Please enter an input: "))
+input = int(input("Please enter an input: "))   #asks for number
 
-if input%2 == 0:
+if input%2 == 0:                                #Finds if remainder is 0
     print("Test 1: Even")
 else:
     print("Test 1: Odd")
-
+                                                #Finds if number is greater, less, or equal to 0
 if input>0:
     print("Test 2: Positive")
 elif input<0:
@@ -32,7 +32,7 @@ elif input<0:
 else:
     print("Test 2: 0")
 
-if input > 100 or input < -100:
+if input > 100 or input < -100:                 #Finds if number is larger than 100 or less than -100
     print("Test 3: Exclusive")
 else:
     print("Test 3: Inclusive")
