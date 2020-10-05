@@ -89,4 +89,4 @@ elif percentage <70 and percentage >= 60:
     print('\n'+text+'a D, '+str(percentage)+'%')
 
 else:
-    print('\n'+text+str(percentage)+"%.  I honestly don't know how you got here either.")
+    print('\n'+text+str(percentage)+"%.  I honestly don't know how you got here.")
