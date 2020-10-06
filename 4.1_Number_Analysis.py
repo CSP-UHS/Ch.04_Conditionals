@@ -18,9 +18,19 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
-print("Hey, I kinda learnt a bit of programming want me to show you what I can do with a number")
-number = int(input(print("whether you said yes or no doesnt matter gimme a number")))
-if number/2 == float:
+number = int(input("Type any whole number: "))
+if number%2 == 1:
     print("Test 1: Odd")
 else:
     print("Test 1: Even")
+if number >= 1:
+    print("Test 2: Positive")
+elif number == 0:
+    print("Test 2: Nonnegative/Nonpositive you picked 0")
+elif number <= -1:
+    print("Test 2: Negative")
+if -100 <= number <= 100:
+    print("Test 3: Inclusive")
+else:
+    print("Test 3: Exclusive")
+
