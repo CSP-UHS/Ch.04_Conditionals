@@ -46,10 +46,12 @@
 
      if user_input == "A" or "a" or "Jedi Master" or "jedi master":
          sensitivity = 1000
-     else if user_input == B:
+         print("Not a choice!")
+     elif user_input == "B" or "b" or "Sith Lord" or "sith lord":
          sensitivity = 900
-     else if user_input == C:
+         print("Sith Lord selected")
+     elif user_input == "C" or "c" or "Droid" or "droid":
          sensitivity = 0
-if sensitivity == 1000:
-     print("Sensitivity: ",sensitivity)
+         print("Droid selected")
+    else print("        ")
 
