@@ -11,18 +11,18 @@ else:
 
  # 2. Make the following program work. (3 mistakes)
      
-     x = input("Enter a number: ")
-     if x = 3
-         print("You entered 3")
+x = int(input("Enter a number: "))
+if x == 3:
+    print("You entered 3")
 
 
   # 3. Make the following program work. (4 mistakes)
-     
-     answer = input("What is the name of Poe Dameron's Droid? ")
-     if a = "BB8":
-         print("Correct!")
-         else
-         print("Incorrect! It is BB8.")
+
+answer = input("What is the name of Poe Dameron's Droid? ").upper()
+if answer == "BB8":
+    print("Correct!")
+else:
+    print("Incorrect! It is BB8.")
 
 
   # 4. Make the following program work. (4 mistakes)
