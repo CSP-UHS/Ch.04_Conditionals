@@ -4,10 +4,11 @@ QUIZ MASTER PROJECT
 The criteria for the project are on the website. Make sure you test this quiz with 
 two of your student colleagues before you run it by your instructor.
 '''
-
-print("Himbo Quiz")
-
 score=0
+print("Himbo Quiz")
+print("Correct answers are based off what is said in the video (If you know you know)")
+
+print()
 
 print("1: Who painted the Mona Lisa?")
 print("A: Mona Lisa")
