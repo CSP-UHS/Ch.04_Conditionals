@@ -2,34 +2,34 @@
 
   #1. Make the following program work. (3 mistakes)
      
-     midichlorians = float(input("Enter midichlorian count: ")
-     if midichlorians > 10000
+     midichlorians = float(input("Enter midichlorian count: "))
+     if midichlorians > 10000:
          print("You have serious Jedi potential")
-     elif:
+     else:
          print("Jedi, you will never be.")
 
 
  # 2. Make the following program work. (3 mistakes)
      
-     x = input("Enter a number: ")
-     if x = 3
+     x = int(input("Enter a number: "))
+     if x == 3:
          print("You entered 3")
 
 
   # 3. Make the following program work. (4 mistakes)
      
      answer = input("What is the name of Poe Dameron's Droid? ")
-     if a = "BB8":
+     if answer.upper() == "BBB":
          print("Correct!")
-         else
+     else:
          print("Incorrect! It is BB8.")
 
 
   # 4. Make the following program work. (4 mistakes)
      
-     x = input("Name one of the top 3 greatest Jedi.")
-     if jedi == Yoda or Luke Skywalker or Obi-Wan Kenobi:
-         print "That is correct!"
+     jedi = input("Name one of the top 3 greatest Jedi.")
+     if jedi.lower() == "yoda" or "luke skywalker" or "obi-wan kenobi":
+         print("That is correct!")
 
 
 
@@ -44,11 +44,12 @@
 
      user_input = input("Choose a character?")
 
-     if user_input = A:
+     if user_input == "A" or "a" or "Jedi Master" or "jedi master":
          sensitivity = 1000
-     else if user_input = B:
+     else if user_input == B:
          sensitivity = 900
-     else if user_input = C:
+     else if user_input == C:
          sensitivity = 0
+if sensitivity == 1000:
+     print("Sensitivity: ",sensitivity)
 
-     print("Sensitivity: ",Sensitivity)
