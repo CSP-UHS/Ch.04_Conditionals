@@ -27,9 +27,9 @@ else:
 
   # 4. Make the following program work. (4 mistakes)
      
-     x = input("Name one of the top 3 greatest Jedi.")
-     if jedi == Yoda or Luke Skywalker or Obi-Wan Kenobi:
-         print "That is correct!"
+jedi = input("Name one of the top 3 greatest Jedi.").upper()
+if jedi == "YODA" or jedi == "LUKE SKYWALKER" or jedi == "OBI-WAN KENOBI":
+    print ("That is correct!")
 
 
 
