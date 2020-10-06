@@ -53,5 +53,7 @@
      elif user_input == "C" or "c" or "Droid" or "droid":
          sensitivity = 0
          print("Droid selected")
-    else print("        ")
+     else:
+         print("         ")
+
 

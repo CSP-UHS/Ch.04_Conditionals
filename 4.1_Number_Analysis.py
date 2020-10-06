@@ -18,3 +18,9 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+print("Hey, I kinda learnt a bit of programming want me to show you what I can do with a number")
+number = int(input(print("whether you said yes or no doesnt matter gimme a number")))
+if number/2 == float:
+    print("Test 1: Odd")
+else:
+    print("Test 1: Even")
