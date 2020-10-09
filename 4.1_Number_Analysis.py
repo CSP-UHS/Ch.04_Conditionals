@@ -35,7 +35,7 @@ else:
     print("Test 2: Negative")
 
 #test three
-if int(inputnumber) > -100 and int(inputnumber) < 100:
+if int(inputnumber) >= -100 and int(inputnumber) <= 100:
     print("Test 3: Inclusive")
 else:
     print("Test 3: Exclusive")
