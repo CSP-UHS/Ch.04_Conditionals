@@ -18,3 +18,22 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+
+num = float(input("Please enter a number:"))
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("0 is neither +/-")
+
+if -100 <= num <= 100:
+    print("Inclusive")
+else:
+    print("Exclusive")
