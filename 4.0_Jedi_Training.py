@@ -35,20 +35,21 @@ if jedi == "YODA" or jedi == "LUKE SKYWALKER" or jedi == "OBI-WAN KENOBI":
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
  #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
-     
-     print("Welcome to the Jedi Academy!")
 
-     print("A. Jedi Master")
-     print("B. Sith Lord")
-     print("C. Droid")
+    print("Welcome to the Jedi Academy!")
 
-     user_input = input("Choose a character?")
+    print("A. Jedi Master")
+    print("B. Sith Lord")
+    print("C. Droid")
 
-     if user_input = A:
-         sensitivity = 1000
-     else if user_input = B:
-         sensitivity = 900
-     else if user_input = C:
-         sensitivity = 0
+    user_input = input("Choose a character?").lower()
 
-     print("Sensitivity: ",Sensitivity)
+    if user_input == "A" or user_input == "jedi master":
+        sensitivity = 1000
+    if user_input == "B" or user_input == "sith lord":
+        sensitivity = 900
+    if user_input == "C" or user_input == "droid":
+        sensitivity = 0
+
+    print("Sensitivity: ", sensitivity)
+
