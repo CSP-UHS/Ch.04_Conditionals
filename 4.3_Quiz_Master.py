@@ -62,7 +62,7 @@ elif answer.lower() == "jake":
     print("Correct")
     number_correct += 1
 else:
-    print("Wrong, the correct is Jake")
+    print("Wrong, the correct is jake perman")
 
 print()
 print("Question 4")
@@ -165,7 +165,7 @@ print("B. Chester Arthur")
 print("C. Millard Fillmore")
 print("D. John Tyler")
 
-user_input = input("Who was the 8th president of the United States")
+user_input = input("Who was the 8th president of the United States :")
 
 if user_input.upper() == "A":
     print("Correct")
@@ -185,7 +185,7 @@ print("B. 1.3 million square miles")
 print("C. 3.7 million square miles")
 print("D. 5.4 million square miles")
 
-user_input = input("How much land is under Antarctica's's ice")
+user_input = input("How much land is under Antarctica's's ice :")
 
 if user_input.upper() == "D":
     print("Correct")
