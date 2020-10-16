@@ -18,24 +18,17 @@ print("\nyour final grade is",fg,"%")
 
 if fg > 100:
     print("\033[94mUhh, okay showoff")
-
-if 100 >= fg >= 90:
+elif fg >= 90:
     print("\033[94mThats an A, nice work!")
-
-if 88.99 >= fg >= 80:
+elif fg >= 80:
     print("\033[92mThats a B, not bad")
-
-if 79.99 >= fg >= 70:
+elif fg >= 70:
     print("C's get degrees!")
-
-if 69.99 >= fg >= 69.01:
+elif fg >= 69.01:
     print("Gonna need to bump that up a little more, its a D")
-
-if fg == 69:
+elif fg == 69:
     print("nice lmao")
-
-if 68.99 >= fg >= 60:
+elif fg >= 60:
     print("Gonna need to bump that up a little more, its a D")
-
-if fg <= 59.99:
+else:
     print("You are a failure")

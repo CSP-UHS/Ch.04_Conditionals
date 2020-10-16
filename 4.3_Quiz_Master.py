@@ -8,8 +8,8 @@ corr = 0
 wrng = 0
 
 ans = int(input("\n\033[1;34mHow many wins does NA have at worlds 2020?"))
-if ans == 1:
-    print("\033[92mThanks FlyQuest for ruining the meme. Take a point")
+if ans == 2:
+    print("\033[92mThank FlyQuest and G2 for ruining the meme. Take a point")
     corr = corr + 1
 else:
     print("\033[31mIncorrect")
@@ -48,7 +48,7 @@ elif ans.upper() == "TSM" or ans.upper() == "TL" or ans.upper() == "TEAM LIQUID"
 else:
     print("\033[31mThat either isn't a team competing, or you typed it in wrong, no consequences")
 
-ans = input("\n\033[1;34mAre Mr. Hermons puns bad?")
+ans = input("\n\033[1;34mAre Mr. Hermons' and Joes' puns bad?")
 if ans.upper() == "YES":
     print("\033[32mCorrect!")
     corr = corr + 1
