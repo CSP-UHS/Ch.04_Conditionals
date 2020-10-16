@@ -18,5 +18,18 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
-num=input("Enter Number: ")
-if num
+num=int(input("Enter Number: "))
+if num%2 ==0:
+    print("Even")
+else:
+    print("Odd")
+if num>0:
+    print("Positive")
+elif num<0:
+    print("Negative")
+else:
+    print("0")
+if num>-100 and num<100:
+    print("Inclusive")
+else:
+    print("Exclusive")
