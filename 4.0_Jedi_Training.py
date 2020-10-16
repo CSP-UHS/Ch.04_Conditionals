@@ -18,7 +18,7 @@ midichlorians = float(input("Enter midichlorian count: "))
 
   # 3. Make the following program work. (4 mistakes)
      
-     answer = input("What is the name of Poe Dameron's Droid? ")
+     a = int(input("What is the name of Poe Dameron's Droid? "))
      if a = "BB8":
          print("Correct!")
          else
@@ -29,7 +29,7 @@ midichlorians = float(input("Enter midichlorian count: "))
      
      x = input("Name one of the top 3 greatest Jedi.")
      if jedi == Yoda or Luke Skywalker or Obi-Wan Kenobi:
-         print "That is correct!"
+         print ("That is correct!")
 
 
 
