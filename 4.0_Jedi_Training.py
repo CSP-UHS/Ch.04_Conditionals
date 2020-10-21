@@ -19,17 +19,17 @@
   # 3. Make the following program work. (4 mistakes)
      
      answer = input("What is the name of Poe Dameron's Droid? ")
-     if a = "BB8":
+     if answer == "BB8":
          print("Correct!")
-         else
+     else :
          print("Incorrect! It is BB8.")
 
 
   # 4. Make the following program work. (4 mistakes)
      
      x = input("Name one of the top 3 greatest Jedi.")
-     if jedi == Yoda or Luke Skywalker or Obi-Wan Kenobi:
-         print "That is correct!"
+     if jedi == "Yoda" or "Luke" "Skywalker" or "Obi-Wan Kenobi":
+         print ("That is correct!")
 
 
 
@@ -52,3 +52,26 @@
          sensitivity = 0
 
      print("Sensitivity: ",Sensitivity)
+
+
+#the one I fix
+print("Welcome to the Jedi Academy!")
+print("A. Jedi Master")
+print("B. Sith Lord")
+print("C. Droid")
+
+user_input = input("Choose a character?")
+
+if user_input.lower() == "A":
+    print("A. Jedi Master")
+    sensitivity = 1000
+elif user_input.lower() == "B":
+    print("B. Sith Lord")
+    sensitivity = 900
+elif user_input.lower() == "C":
+    print("C. Droid")
+    sensitivity = 0
+elif user_input == "":
+    print("not a choice")
+
+print("Sensitivity: ", )
