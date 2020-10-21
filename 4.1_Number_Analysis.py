@@ -18,6 +18,7 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+
 user_input = int(input("enter a number: "))
 
 if user_input % 2 == 0:
