@@ -35,26 +35,7 @@
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
  #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
-     
-     print("Welcome to the Jedi Academy!")
 
-     print("A. Jedi Master")
-     print("B. Sith Lord")
-     print("C. Droid")
-
-     user_input = input("Choose a character?")
-
-     if user_input = A:
-         sensitivity = 1000
-     else if user_input = B:
-         sensitivity = 900
-     else if user_input = C:
-         sensitivity = 0
-
-     print("Sensitivity: ",Sensitivity)
-
-
-#the one I fix
 print("Welcome to the Jedi Academy!")
 print("A. Jedi Master")
 print("B. Sith Lord")
@@ -62,16 +43,16 @@ print("C. Droid")
 
 user_input = input("Choose a character?")
 
-if user_input.lower() == "A":
+if user_input.lower() == "a" or user_input.lower() == "jedi master":
     print("A. Jedi Master")
     sensitivity = 1000
-elif user_input.lower() == "B":
+elif user_input.lower() == "b" or user_input.lower() == "sith lord":
     print("B. Sith Lord")
     sensitivity = 900
-elif user_input.lower() == "C":
+elif user_input.lower() == "c" or user_input.lower() == "droid":
     print("C. Droid")
     sensitivity = 0
-elif user_input == "":
+elif user_input == " ":
     print("not a choice")
 
 print("Sensitivity: ", )
