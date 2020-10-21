@@ -45,7 +45,7 @@ else:                                                           # Removed Indent
          print "That is correct!"
 '''
 jedi = input("Name one of the top 3 greatest Jedi.")
-if jedi == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":      # Added "" for all conditions
+if jedi == "Yoda" or jedi == "Luke Skywalker" or jedi == "Obi-Wan Kenobi":      # Added "" for all conditions
     print ("That is correct!")                                  # Added ()
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
