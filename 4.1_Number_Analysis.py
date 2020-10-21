@@ -18,3 +18,41 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+Num= int(input("Give me a number: "))
+if Num >100 and Num % 2 == 0:
+    print("Test 1: Even")
+    print("Test 2: Positive")
+    print("Test 3: Exclusive")
+elif Num >100 and Num % 2 == 1:
+    print("Test 1: Odd")
+    print("Test 2: Positive")
+    print("Test 3: Exclusive")
+elif Num >0 and Num % 2 == 0:
+    print("Test 1: Even")
+    print("Test 2: Positive")
+    print("Test 3: Inclusive")
+elif Num >0 and Num % 2 ==1:
+    print("Test 1: Odd")
+    print("Test 2: Positive")
+    print("Test 3: Inclusive")
+elif Num ==0:
+    print("Test 1: Zero")
+    print("Test 2: Zero")
+    print("Test 3: Inclusive")
+elif Num <-100 and Num % 2 == 0:
+    print("Test 1: Even")
+    print("Test 2: Negative")
+    print("Test 3: Exclusive")
+elif Num <-100 and Num % 2 == 1:
+    print("Test 1: Odd")
+    print("Test 2: Negative")
+    print("Test 3: Exclusive")
+elif Num <0 and Num % 2 == 0:
+    print("Test 1: Even")
+    print("Test 2: Negative")
+    print("Test 3: Inclusive")
+elif Num <0 and Num % 2 == 1:
+    print("Test 1: Odd")
+    print("Test 2: Negative")
+    print("Test 3: Inclusive")
+
