@@ -19,7 +19,7 @@ else:
   # 3. Make the following program work. (4 mistakes)
      
      answer = input("What is the name of Poe Dameron's Droid? ")
-     if a == "BB8":
+     if answer.upper() == "BB8":
          print("Correct!")
      else:
          print("Incorrect! It is BB8.")
@@ -28,7 +28,7 @@ else:
   # 4. Make the following program work. (4 mistakes)
      
      jedi = input("Name one of the top 3 greatest Jedi.")
-     if jedi.upper() == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":
+     if jedi.upper() == "Yoda" or jedi.upper() == "Luke Skywalker" or jedi.upper() == "Obi-Wan Kenobi":
          print("That is correct!")
 
 
@@ -45,25 +45,14 @@ print("C. Droid")
 
 user_input = input("Choose a character?")
 
-if user_input.upper() == "A":
+if user_input.upper() == "A" or user_input.upper() == "JEDI MASTER":
     sensitivity += 1000
-    print("Sensitivity: ", sensitivity)
-elif user_input.upper() == "JEDI MASTER":
-    sensitivity += 1000
-    print("Sensitivity: ", sensitivity)
-elif user_input.upper() == "B":
+elif user_input.upper() == "B" or user_input.upper() == "SITH LORD":
     sensitivity += 900
-    print("Sensitivity: ", sensitivity)
-elif user_input.upper() == "SITH LORD":
-    sensitivity += 900
-    print("Sensitivity: ", sensitivity)
-elif user_input.upper() == "C":
+elif user_input.upper() == "C" or user_input.upper() == "DROID":
     sensitivity += 0
-    print("Sensitivity: ", sensitivity)
-elif user_input.upper() == "DROID":
-    sensitivity += 0
-    print("Sensitivity: ", sensitivity)
 else:
     print("Not a choice!")
-    print("Sensitivity: ")
+    sensitivity=""
 
+print("Sensitivity: ", sensitivity)

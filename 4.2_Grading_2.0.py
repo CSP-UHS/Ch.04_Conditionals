@@ -15,11 +15,20 @@ semgrade=semgrade*examworthe
 overall=examgrade+semgrade
 
 print()
-if overall<60:
-    print("Transfer to Johnston!")
-elif overall>90:
-    print("Wow! Your parents aren't disappointed at you that much than I thought")
-else:
+if overall>=90:
+    print("Amazing! You managed to not disappoint your parents or the world!")
+    print("A")
+elif overall>=80:
     print("You can live, for now...")
+    print("B")
+elif overall>=70:
+    print("You're so... average")
+    print("C")
+elif overall>=60:
+    print("Everyone is disappointed in you but we still have hope")
+    print("D")
+else:
+    print("Transfer to Johnston!")
+    print("F")
 print("\nHere's your overall grade:")
 print(math.floor(overall))
