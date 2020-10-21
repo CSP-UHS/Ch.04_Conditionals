@@ -9,7 +9,7 @@ b = int(input("enter final grade: "))
 d = int(input("final worth: "))/100
 
 grading_p = a * (1-d) + b*d
-#print (grading_p)
+# print (grading_p)
 
 if 100 >= grading_p >= 93:
     print("A")
