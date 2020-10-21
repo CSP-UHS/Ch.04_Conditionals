@@ -18,3 +18,20 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+while True:
+    num=int(input("\nPlease enter a whole number of your choosing: "))
+    print("\nIn:",num)
+    if num%2==1:
+        print("Out:  Test 1: Odd")
+    elif num%2==0:
+        print("Out:  Test 1: Even")
+    if num>0:
+        print("      Test 2: Positive")
+    elif num<0:
+        print("      Test 2: Negative")
+    else:
+        print("      Test 2: Zero")
+    if -100<num<100:
+        print("      Test 3: Inclusive")
+    else:
+        print("      Test 3: Exclusive")
