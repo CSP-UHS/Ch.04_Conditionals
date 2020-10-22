@@ -50,3 +50,20 @@ if ans3 == "c":
     number_correct = number_correct + 1
 
 print(number_correct)
+
+#Question 4#
+
+ans4 = input("What is the capital of the State of Iowa?").lower()
+
+if ans4 != "des moines":
+    print("Incorrect.")
+
+if ans4 == "des moines":
+        print("Correct.")
+if ans4 == "des moines":
+    number_correct = number_correct + 1
+
+print(number_correct)
+
+#Question 5#
+
