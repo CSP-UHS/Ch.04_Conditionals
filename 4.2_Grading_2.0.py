@@ -23,7 +23,6 @@ while run is True:
     D = range(60, 70)
     F = range(0, 60)
 
-    print(A)
     # Calculates the users final grade
     sem_grade = sem_grade * (sem_worth/100)
     fin_grade = fin_grade * (fin_worth/100)
