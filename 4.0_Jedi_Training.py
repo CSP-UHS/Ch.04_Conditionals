@@ -37,7 +37,7 @@ print("B. Sith Lord")
 print("C. Droid")
 
 user_input = input("Choose a character?")
-
+sensitivity = None
 if user_input.lower() == 'a':
     sensitivity = 1000
 elif user_input.lower() == 'b':

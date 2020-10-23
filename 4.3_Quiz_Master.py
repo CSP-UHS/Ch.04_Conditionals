@@ -112,9 +112,9 @@ multi("Get it? Ohio is the potato state, and french fries are made of potatoes, 
       "\ntower is in france. Anyways, which form of potatoes is inferior to the rest?",
       "hashbrowns", "raw potatoes", "mashed", "smashed", 1)
 if correct == 11:
-    print("Great job!")
+    print("Great job!, You got ", str(correct/11*100) + "%")
 else:
-    print("You suck, now go do it again. Try and do better this time, will you?")
+    print("Wow, only", str(correct/11*100) + "%?", "You suck, go do it again. Try and do better this time, will you?")
 
 
 
