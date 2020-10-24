@@ -21,7 +21,7 @@ def answerchk(useransw, rightansw, attempts):
     # takes the input of the user and compares it against the specified answer
     # Also supports functionality for multiple tries, if a parameter is specified
     if useransw.lower() == rightansw.lower():
-        print("Correct.\n")
+        print("\033[32mCorrect.\n")
         correct += 1
         if times == 0:
             points += 1
@@ -37,24 +37,22 @@ def answerchk(useransw, rightansw, attempts):
         trys -= 1
         times += 1
         if trys == 0:
-            print("Incorrect,", trys, "trys remaining\n")
+            print("\033[91mIncorrect,\033[37m", trys, "\033[91mtrys remaining\n")
             times += 1
         elif trys > 0:
-            print("Incorrect,", trys, "trys remaining\n")
-
+            print("\033[91mIncorrect,\033[37m", trys, "\033[91mtrys remaining\n")
     if trys == 0:
         quest_num += 1
         if useransw.lower() != rightansw.lower():
-            print("The correct answer was", rightansw, "\n")
+            print("\033[37mThe correct answer was\033[32m", rightansw, "\n")
             times = 0
-            print("Current Score:", correct, "out of", quest_num, "questions correct")
-            print("Current Points:", points, "points out of", quest_num, "points possible\n")
+            print("\033[95mCurrent Score:\033[37m", correct, "\033[95mout of\033[37m", quest_num, "\033[95mquestions correct")
+            print("\033[95mCurrent Points:\033[37m", points, "\033[95mpoints out of\033[37m", quest_num, "\033[95mpoints possible\n")
         else:
-            print("Current Score:", correct, "out of", quest_num, "questions correct")
-            print("Current Points:", points, "points out of", quest_num, "points possible\n")
+            print("\033[95mCurrent Score:\033[37m", correct, "\033[95mout of\033[37m", quest_num, "\033[95mquestions correct")
+            print("\033[95mCurrent Points:\033[37m", points, "\033[95mpoints out of\033[37m", quest_num, "\033[95mpoints possible\n")
     # returns the amount of trys remaining. program gets stuck in a loop without this line
     return trys
-
 # Function for the first kind of quiz question, multiple choice. Only supports 4 choices. no more, no less.
 def multi(quest, answ, c2, c3, c4, trys):
     while trys > 0:
@@ -63,20 +61,18 @@ def multi(quest, answ, c2, c3, c4, trys):
         global correct
         # creates a list of options based on function parameters
         options = [answ, c2, c3, c4]
-        print(quest)
         letters = ["A", "B", "C", "D"]
+        # Prints the question
+        print("\033[33m" + str(quest_num+1) + ")", quest)
         # prints out the four options in random sequence, but will not print a duplicate.
-        for i in range(4):
+        for x in range(0, len(letters)):
             # converts a random value from the list into a single value in a string
-            letter = "".join(random.sample(letters, 1))
-            option = "".join(random.sample(options, 1))
+            option = " ".join(random.sample(options, 1))
+            print("\033[94m" + letters[x] + ") " + option)
+            # option = "".join(random.sample(options, 1))
             # allows the program to determine which letter is the correct answer, even though it is assigned randomly.
             if option == answ:
-                rightansw = letter
-            choice = letter + ") " + option
-            print(choice)
-            # removes any value that has already been used from the list so it will not be printed again
-            letters.remove(letter)
+                rightansw = letters[x]
             options.remove(option)
         useransw = input(":")
         # Calls the answercheck function to verify the users answer.
@@ -90,20 +86,20 @@ def openend(quest, answ, trys):
         global quest_num
         global correct
         rightansw = str(answ)
-        useransw = str(input(quest))
+        useransw = str(input("\033[33m" + str(quest_num+1) + ") " + quest))
         result = answerchk(useransw, rightansw, trys)
         trys = result
 
 
 # All of the test questions. Created using the above functions
 # Question One: What color is an orange?
-multi("What is the color of an orange", "medium orange", "light orange", "dark orange", "orange", 2)
+multi("What is the color of an orange?", "medium orange", "light orange", "dark orange", "orange", 2)
 
 # Question Two: What is 12 * 12?
 openend("What is 12 * 12?", 144, 1)
 
 # Question Three: What is the color of the sky?
-openend("What is the color of the sky?", "sky blue", 3)
+openend("What is the color of the sky?", "sky blue", 2)
 
 # Question Four: Is the python a venomous snake?
 multi("Is the python a venomous snake?", "no", "yes", "maybe", "all of the above/below/inbetween", 1)
@@ -116,10 +112,10 @@ multi("How long did it take me to write this program?", "About 3 hours", "Over 6
 openend("What is the square root of 89.0000000000 with the appropriate amount of sig figs?", "9.43398113205", 1)
 
 # Question Seven: Do you know your abc's? If so please type them out in order:
-openend("Do you know your abc's? If so please type them all out in order:", "abcdefghijklmnopqrstuvwxyz", 3)
+openend("Do you know your abc's? If so please type them all out in order:", "abcdefghijklmnopqrstuvwxyz", 2)
 
-# Question Eight: Which question number is this? PS: its not 8. Good luck :) PS: no cheating.
-openend("Which question number is this? PS: its not 8. Good luck :) PS: no cheating.", "2^3", 4)
+# Question Eight: Which question number is this? PS: its not 8
+openend("Which question number is this? PS: its not 8.", "2^3", 3)
 
 # Question Nine: True or False, french fries are made of banana peppers?
 openend("True or False, french fries are made of banana peppers?", "False", 1)
