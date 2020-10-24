@@ -9,26 +9,49 @@ import random
 # sets neccessary variables needed to calculate the overall score
 correct = 0
 quest_num = 0
-
+times = 0
+points = 0
 # Answer checking function
 def answerchk(useransw, rightansw, attempts):
     global correct
+    global times
+    global quest_num
+    global points
     trys = attempts
-
     # takes the input of the user and compares it against the specified answer
     # Also supports functionality for multiple tries, if a parameter is specified
     if useransw.lower() == rightansw.lower():
-        print("Correct.")
+        print("Correct.\n")
         correct += 1
+        if times == 0:
+            points += 1
+            times = 0
+        elif times == 1:
+            points += .75
+            times = 0
+        else:
+            points += .5
+            times = 0
         trys = 0
     elif attempts > 0:
         trys -= 1
-        print("Incorrect,", trys, "trys remaining")
-    else:
-        print("Incorrect,", trys, "trys remaining")
-        print("The correct answer was", rightansw)
+        times += 1
+        if trys == 0:
+            print("Incorrect,", trys, "trys remaining\n")
+            times += 1
+        elif trys > 0:
+            print("Incorrect,", trys, "trys remaining\n")
+
     if trys == 0:
-        print("Current Score:", correct, "out of", quest_num)
+        quest_num += 1
+        if useransw.lower() != rightansw.lower():
+            print("The correct answer was", rightansw, "\n")
+            times = 0
+            print("Current Score:", correct, "out of", quest_num, "questions correct")
+            print("Current Points:", points, "points out of", quest_num, "points possible\n")
+        else:
+            print("Current Score:", correct, "out of", quest_num, "questions correct")
+            print("Current Points:", points, "points out of", quest_num, "points possible\n")
     # returns the amount of trys remaining. program gets stuck in a loop without this line
     return trys
 
@@ -56,7 +79,6 @@ def multi(quest, answ, c2, c3, c4, trys):
             letters.remove(letter)
             options.remove(option)
         useransw = input(":")
-        quest_num += 1
         # Calls the answercheck function to verify the users answer.
         # Then it sets the value returned by the function to a variable in order to properly manage the remaining trys
         result = answerchk(useransw, rightansw, trys)
@@ -69,19 +91,19 @@ def openend(quest, answ, trys):
         global correct
         rightansw = str(answ)
         useransw = str(input(quest))
-        quest_num += 1
         result = answerchk(useransw, rightansw, trys)
         trys = result
 
 
+# All of the test questions. Created using the above functions
 # Question One: What color is an orange?
-multi("What is the color of an orange", "medium orange", "light orange", "dark orange", "orange", 3)
+multi("What is the color of an orange", "medium orange", "light orange", "dark orange", "orange", 2)
 
 # Question Two: What is 12 * 12?
 openend("What is 12 * 12?", 144, 1)
 
 # Question Three: What is the color of the sky?
-openend("What is the color of the sky?", "sky blue", 2)
+openend("What is the color of the sky?", "sky blue", 3)
 
 # Question Four: Is the python a venomous snake?
 multi("Is the python a venomous snake?", "no", "yes", "maybe", "all of the above/below/inbetween", 1)
@@ -106,15 +128,19 @@ openend("True or False, french fries are made of banana peppers?", "False", 1)
 multi("Using what you know from the last question, where might the eiffel tower located?", "Ohio", "In the Royal palace",
       "On uranus (The planet. you dirty dog)", "The bermuda triangle", 1)
 
-# Question 11: Get it? Ohio is the potato state, and french fries are made of potatoes, not banana peppers and the
+# Question 11: Get it? Ohio is the potato state, and french fries are made of potatoes, not banana peppers, and the
 # eiffel tower is in france. Anyways, which form of potatoes is inferior to the rest?
 multi("Get it? Ohio is the potato state, and french fries are made of potatoes, not banana peppers and the eiffel "
       "\ntower is in france. Anyways, which form of potatoes is inferior to the rest?",
-      "hashbrowns", "raw potatoes", "mashed", "smashed", 1)
-if correct == 11:
-    print("Great job!, You got ", str(correct/11*100) + "%")
+      "twice baked", "raw", "mashed", "smashed", 1)
+if points == 11 and correct == 11:
+    print("Well would you look at that, you got 100%. You want a cookie or something?")
+elif correct == 11:
+    print("You got all the questions correct, but it took you multiple trys so you only got", str(round(points/11*100, 2)) + "%")
+    print("Please try again")
 else:
-    print("Wow, only", str(correct/11*100) + "%?", "You suck, go do it again. Try and do better this time, will you?")
+    print("Wow, only", str(round(correct/11*100, 2)) + "%?", "I gave you multiple trys \nand you STILL couldnt get them"
+          "all? try it again. And do better this time will you?")
 
 
 
