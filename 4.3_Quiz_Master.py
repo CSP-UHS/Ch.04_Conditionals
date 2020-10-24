@@ -36,10 +36,9 @@ def answerchk(useransw, rightansw, attempts):
     elif attempts > 0:
         trys -= 1
         times += 1
-        if trys == 0:
+        if trys > 0:
             print("\033[91mIncorrect,\033[37m", trys, "\033[91mtrys remaining\n")
-            times += 1
-        elif trys > 0:
+        else:
             print("\033[91mIncorrect,\033[37m", trys, "\033[91mtrys remaining\n")
     if trys == 0:
         quest_num += 1
@@ -130,13 +129,13 @@ multi("Get it? Ohio is the potato state, and french fries are made of potatoes, 
       "\ntower is in france. Anyways, which form of potatoes is inferior to the rest?",
       "twice baked", "raw", "mashed", "smashed", 1)
 if points == 11 and correct == 11:
-    print("Well would you look at that, you got 100%. You want a cookie or something?")
+    print("\033[33mWell would you look at that, you got \033[37m100%\033[33m. You want a cookie or something?")
 elif correct == 11:
-    print("You got all the questions correct, but it took you multiple trys so you only got", str(round(points/11*100, 2)) + "%")
-    print("Please try again")
+    print("\033[33mYou got all the questions correct, but it took you multiple trys so you only got\033[37m", str(round(points/11*100, 2)) + "%")
+    print("\033[33mPlease try again")
 else:
-    print("Wow, only", str(round(correct/11*100, 2)) + "%?", "I gave you multiple trys \nand you STILL couldnt get them"
-          "all? try it again. And do better this time will you?")
+    print("\033[33mWow, only\033[37m", str(round(correct/11*100, 2)) + "%?", "\033[33mI gave you multiple trys \nand you STILL couldnt get them"
+          " all? try it again. And do better this time will you?")
 
 
 
