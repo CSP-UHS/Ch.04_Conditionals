@@ -28,7 +28,7 @@
   # 4. Make the following program work. (4 mistakes)
      
      jedi = input("Name one of the top 3 greatest Jedi.")
-     if jedi.lower() == "yoda" or "luke skywalker" or "obi-wan kenobi":
+     if jedi.lower() == "yoda" or jedi.lower() == "luke skywalker" or jedi.lower() == "obi-wan kenobi":
          print("That is correct!")
 
 
@@ -37,23 +37,22 @@
  #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.
      
      print("Welcome to the Jedi Academy!")
-
      print("A. Jedi Master")
      print("B. Sith Lord")
      print("C. Droid")
 
      user_input = input("Choose a character?")
 
-     if user_input == "A" or "a" or "Jedi Master" or "jedi master":
+     if user_input == "A" or user_input == "a" or user_input == "Jedi Master" or user_input == "jedi master":
          sensitivity = 1000
          print("Not a choice!")
-     elif user_input == "B" or "b" or "Sith Lord" or "sith lord":
+     elif user_input == "B" or user_input == "b" or user_input == "Sith Lord" or user_input == "sith lord":
          sensitivity = 900
          print("Sith Lord selected")
-     elif user_input == "C" or "c" or "Droid" or "droid":
+     elif user_input == "C" or user_input == "c" or user_input == "Droid" or user_input == "droid":
          sensitivity = 0
          print("Droid selected")
      else:
-         print("         ")
+         print("      ")
 
 
