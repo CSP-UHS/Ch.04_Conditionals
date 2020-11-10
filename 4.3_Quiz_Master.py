@@ -49,8 +49,6 @@ if ans3 == "c":
 if ans3 == "c":
     number_correct = number_correct + 1
 
-print(number_correct)
-
 #Question 4#
 
 ans4 = input("What is the capital of the State of Iowa?").lower()
@@ -63,7 +61,18 @@ if ans4 == "des moines":
 if ans4 == "des moines":
     number_correct = number_correct + 1
 
-print(number_correct)
 
 #Question 5#
+
+ans5 = input("Is country music good?").lower()
+
+if ans5 != "yes":
+    print("Incorrect.")
+
+if ans5 == "no":
+        print("Correct.")
+if ans5 == "no":
+    number_correct = number_correct + 1
+
+#Question 6#
 
