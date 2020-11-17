@@ -76,3 +76,63 @@ if ans5 == "no":
 
 #Question 6#
 
+ans6 = int(input("What is 11+14?"))
+
+if ans6 < 25 or ans6 > 25:
+    print("Wrong.")
+
+if ans6 == 25:
+    print("Correct.")
+if ans6 == 25:
+    number_correct = number_correct + 1
+
+#Question 7#
+
+ans7 = int(input("What is 9 x 9?"))
+
+if ans7 < 81 or ans7 > 81:
+    print("Wrong.")
+
+if ans7 == 81:
+    print("Correct.")
+if ans7 == 81:
+    number_correct = number_correct + 1
+
+#Question 8#
+
+ans8 = int(input("What is 15 / 3?"))
+
+if ans8 < 5 or ans8 > 5:
+    print("Wrong.")
+
+if ans8 == 5:
+    print("Correct.")
+if ans8 == 5:
+    number_correct = number_correct + 1
+
+#Question 9#
+
+ans9 = int(input("What is 50 - 32?"))
+
+if ans9 < 18 or ans9 > 18:
+    print("Wrong.")
+
+if ans9 == 18:
+    print("Correct.")
+if ans9 == 18:
+    number_correct = number_correct + 1
+
+#Question 10#
+
+ans10 = int(input("What is 72 + 38?"))
+
+if ans10 < 110 or ans10 > 110:
+    print("Wrong.")
+
+if ans10 == 110:
+    print("Correct.")
+if ans10 == 110:
+    number_correct = number_correct + 1
+
+print("You are finished!")
+print("Your score is", number_correct, "correct!")
