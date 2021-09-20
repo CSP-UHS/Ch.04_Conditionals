@@ -18,3 +18,18 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+num = float(input("Pick a number, ANY NUMBER!!!!!!!!!!!!!!!!!!!!!!!! : "))
+if num % 2 < 1:
+    print("Test 1: Even")
+else:
+    print("Test 1: Odd")
+if num > 0:
+    print("Test 2: Positive")
+elif num < 0:
+    print("Test 3: Negative")
+else:
+    print("Test 2: YOU PUT A ZERO SMART ONE")
+if num <= 100 or num >= -100:
+    print("Test 3: Inclusive")
+else:
+    print("Test 3: Exclusive")
