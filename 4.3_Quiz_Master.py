@@ -4,7 +4,7 @@ QUIZ MASTER PROJECT
 The criteria for the project are on the website. Make sure you test this quiz with 
 two of your student colleagues before you run it by your instructor.
 '''
-
+# NO PEEKING
 print("THE ULTIMATE QUIZ!  You must score a 93% or better to win!.\n\n")
 mhermons = int(input("\nQuestion 1: How many times can Marc Hermon be seen in Placeholder Team Name's Rube Goldberg Machine?\nAnswer: "))
 
