@@ -50,7 +50,7 @@ elif user_input == "B":
     print("Sensitivity: 900")
 elif user_input == "C":
     print("Sensitivity: 0")
-elif user_input != "A" and "B" and "C":
+else:
     print("Not a choice!")
 
 
