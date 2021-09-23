@@ -18,3 +18,21 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+
+num = float(input("What is the number? "))
+oe = num % 2
+
+if oe == 1:
+    print("Test 1: Odd")
+else:
+    print("Test 1: Even")
+if num > 0:
+    print("Test 2: Positive")
+elif num == 0:
+    print("Test 2: zero")
+else:
+    print("Test 2: Negative")
+if num >= -100 and num <= 100:
+    print("Test 3: Inclusive")
+else:
+    print("Test 3: Exclusive")
