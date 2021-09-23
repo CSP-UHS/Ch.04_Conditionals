@@ -31,4 +31,4 @@ elif overall >=67:
 elif overall >=65:
     print ("Your letter grade is a D, You barley Passed")
 else:
-    print ("Yikes! Seems that you failed, try to study next time!")
+    print ("Seems that you failed!,transfer to Johnston BOZO!")
