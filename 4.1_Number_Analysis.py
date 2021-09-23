@@ -29,4 +29,7 @@ if x<100 and x>-100:
     print("Between -100 and 100")
 
 if x%2==0:
+    print("That is an even number")
+else:
+    print("That number is odd")
 
