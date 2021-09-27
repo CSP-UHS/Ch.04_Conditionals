@@ -37,12 +37,23 @@ if q3 == 'true' or 'True' or "yes" or 'Yes':
 else:
     print("Makes sense, considering that you are failing this.")
 
-q4 = int(input("What is the range for getting an A grade? (Don't includd % sign")
+q4 = int(input("What is the range for getting an A grade? (Don't include % sign")
 if q4 == 93-100 or 93 - 100 or 93- 100 or 93 -100:
     print("Good job,", studentname)
     score += 1
 else:
     print("Eh, that's alright. Tough question.")
 
+q5 = input("How do you use the projector? do you")
+print("A: Slap it until it works")
+print("B: Plug the HDMI into the computer and put it on the right input")
+print("C: Scream at it")
+print("D: Put in a tech support ticket ")
+if q5 == 'B':
+    print("Good Job! You did it! Now tell Mr. Hermon your wise words.")
+    score +=1
+else: print("Wow, did I give Mr. Hermon this test by accident?")
+
 finalscore = score /5
 print("Your final score is", finalscore)
+
