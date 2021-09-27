@@ -56,9 +56,9 @@ if g.upper() == "KSI":
 else:
     score = score
 
-score = round((score / 7) * 100), 3
+score = round((score / 7) * 100)
 
-if score <= 100 and score >= 90:
+if score >= 90:
     print("Your grade is", score, "%, a solid A my friend!")
 elif score >= 80:
     print("Your grade is", score, "%, a respectable B pal.")
