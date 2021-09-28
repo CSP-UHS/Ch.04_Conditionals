@@ -18,5 +18,18 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
-num=input("Pick a number any number!")
-det=num
+number=float(input("Pick a number any number!"))
+odev=number%2
+if odev==1:
+    print("Your number is odd!")
+else:
+    print("Your number is even!")
+
+if number>=0:
+    print("Your number is positive!")
+else:
+    print("Your number is negative!")
+if number<=100 and number>=-100:
+    print("Your number is inclusive!")
+else:
+    print ("Your number is exclsuive!")
