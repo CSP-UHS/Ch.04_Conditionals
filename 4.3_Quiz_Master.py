@@ -11,7 +11,7 @@ print("yes")
 print("no")
 an = input(str())
 if an.lower() == "yes":
-    print("Great, let's get started")
+    print("Correct, let's get started")
     a+=1
 else:
     print("Too bad, your taking it anyway")
@@ -48,13 +48,18 @@ if k == "7625597484987":
     a+=1
 else:
     print("bad, small brain")
-print("When is the last day of school")
-date = input()
-if date.lower() == "idk" or date.lower() == "i don't know":
-    print("your no help")
-else:
-    print("Thanks, you're a big help")
-    a+=1
 
-c = a/b
-print(c,"is your score")
+fav = input(str("What is denis's favorite number"))
+if fav == "13":
+    print("Congratulations, you are correct")
+    a+=1
+else:
+    print("You are incorrect, the answer is 13")
+ustu = input(str("What is 9+10"))
+if ustu == "21":
+    print("You are correct :)")
+    a+=1
+else:
+    print("sad day, incorrect, the")
+
+print("You got",a,"out of",b)
