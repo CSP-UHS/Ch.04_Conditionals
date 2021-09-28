@@ -11,4 +11,10 @@ In this chapter you will be learning about IF-ELIF-ELSE statements.
   <li>Quiz Master Program</li>
 
   </ol>
+ fav = input(float("What is denis's favorite number"))
+if fav == 13:
+    print("Congratulations, you are correct")
+    a+1
+else:
+    print("You are incorrect, all missed points will be deducted off your final grade")
 
