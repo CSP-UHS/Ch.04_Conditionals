@@ -18,3 +18,20 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+x = float(input("What is the number"))
+if x % 2 == 1:
+    print("The number is odd")
+else:
+    print("The number is even")
+if 0 > x:
+    print("It is negative")
+elif 0 > x:
+    print("It is positive")
+else:
+    print("It is zero")
+if 100 <= x:
+    print("It is inclusive")
+elif -100 >= x:
+    print("Is in Inclusive")
+else:
+    print("It is Exclusive")
