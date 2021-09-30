@@ -14,40 +14,42 @@ if an.lower() == "yes":
     print("Correct, let's get started")
     a+=1
 else:
-    print("Too bad, your taking it anyway")
-print("A.The dog is playing")
-print("B.The dog is eating dinner.")
-print("C.The dog is sleeping.")
+    print("the answer is yes, and your taking it anyway")
+print("A.barking at the mailman.")
+print("B.Making a resume.")
+print("C.coding.")
+print("D.asking for mints")
 dog = input(str("What da dog doin?"))
-if dog.lower() == "the dog is partaking in a minuscule amount of trickery":
+if dog.lower() == "asking for mints" or dog.lower()== "d":
     print("That is correct nice job")
     a+=1
 else:
-    print("That was a trick question, the correct answer is, The dog is Partaking in a minuscule amount of trickery")
-print("In the destiny universe, what is Savathun trying to accomplish")
-print("A.Revive Cayde 6, the fallen exo")
-print("B.Remove her worm")
-print("C.Harness the light and stop the Guardians")
+    print("The correct answer is, asking for mints")
+print("In Final Fantasy 13, what is lightnings real name")
+print("A.Serah")
+print("B.Claire")
+print("C.Tifa")
+print("D.Vanille")
 sava = input()
-if sava.lower() == "b" or sava.lower() == "remove her worm":
+if sava.lower() == "b" or sava.lower() == "claire":
     print("Correct, nice job")
     a+=1
 else:
-    print("Good try, but incorrect")
+    print("Good try, but incorrect. It's b")
 print("When did 1984 end")
 ans = input()
 if ans == "1985":
     print("I think thats right")
     a+=1
 else:
-    print("wrong :/")
+    print("wrong :/, 1985")
 print("What is 3, cubed, cubed?")
 k = input()
-if k == "7625597484987":
+if k == "19683":
     print("Great, big brain")
     a+=1
 else:
-    print("bad, small brain")
+    print("bad, small brain, it's 19683")
 
 fav = input(str("What is denis's favorite number"))
 if fav == "13":
@@ -55,11 +57,30 @@ if fav == "13":
     a+=1
 else:
     print("You are incorrect, the answer is 13")
-ustu = input(str("What is 9+10"))
-if ustu == "21":
+
+print("A.Vans")
+print("B.Nike")
+print("C.Adidas")
+print("D.Barefoot")
+ustu = input(str("What shoes are denis wearing"))
+
+if ustu.lower() == "c" or ustu.lower() == "adidas":
     print("You are correct :)")
     a+=1
 else:
-    print("sad day, incorrect, the")
+    print("sad day, incorrect, he is wearing Adidas")
 
 print("You got",a,"out of",b)
+print()
+ove = (a/b)*100
+print(ove,"%")
+if ove >= 90:
+    print("you have an A")
+elif ove <= 89 and ove >=80:
+    print("you have a B")
+elif ove <=79 and ove >=70:
+    print("you have a C")
+elif ove <= 69 and ove >= 60:
+    print("you have a D")
+else:
+    print("you got an F, Your grade sucks")
