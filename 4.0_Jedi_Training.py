@@ -27,7 +27,7 @@ else:
         print("Incorrect! It is BB8.")
 
 
-  # 4. Make the following program work. (4 mistakes)
+  # 4. Make the following program work. (4 mistakes) dingus
 
     x = str(input("Name one of the top 3 greatest Jedi."))
     if x.lower() == "yoda" or x.lower() == "luke skywalker" or x.lower() == "obi-wan kenobi":
