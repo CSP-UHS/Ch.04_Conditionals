@@ -1,0 +1,8 @@
+# else and else if (elif)
+jedi = input("Who is the greatest Jedi? ")
+
+if jedi.lower()=="Yoda":
+    print("That is correct!")
+else:
+    print("Wrong Jedi! You must be a Sith!")
+
