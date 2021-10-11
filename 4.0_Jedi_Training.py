@@ -12,7 +12,7 @@
  # 2. Make the following program work. (3 mistakes)
      
      x = input("Enter a number: ")
-     if x = 3
+     if x == 3
          print("You entered 3")
 
 
