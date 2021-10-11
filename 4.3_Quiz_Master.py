@@ -10,14 +10,16 @@ Things to add:
 '''
 
 # quiz that tests people about random things
-print("Hello! This is a quiz about quizzes in school!")
+'''print("Hello! This is a quiz about quizzes in school!")
 score = int(0)
 studentname = input("What is your name?")
 print("Hello", studentname, "! get ready to take the quiz!")
+'''
+score = int(0)
 
 q1 = input("What is the passing grade of Urbandale High School? (Do NOT include % because that was too much work to code)")
 if q1 == '80':
-    print("Good job", studentname, "You got the question right!")
+    print("Good job You got the question right!")
     score  += 1
 else:
     print("How did you not know that it was 80%?")
@@ -33,7 +35,7 @@ else:
 
 q3 = input("Should you study for a test?")
 if q3 == 'true' or 'True' or "yes" or 'Yes':
-    print("Good job", studentname)
+    print("Good job")
     score += 1
 else:
     print("It's Yes cmon man")
