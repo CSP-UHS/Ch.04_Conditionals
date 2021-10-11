@@ -84,7 +84,7 @@ elif finalscore >=70:
 elif finalscore >=60:
     print("Can't even compete with that D grade ")
 else:
-    print("YOur a failure")
+    print("You're a failure")
 
 
 print("Your final score is", finalscore)
