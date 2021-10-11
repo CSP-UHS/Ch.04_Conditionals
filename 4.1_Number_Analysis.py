@@ -18,3 +18,20 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+print("Hello, welcome to the number analyizer 3000")
+
+firstnumber = int(input("What is the number?"))
+
+if firstnumber >= 1:
+    print("The number is even")
+elif firstnumber <= -1:
+    print("The number is negative")
+elif firstnumber ==0:
+    print("You number is 0")
+elif firstnumber <= -1:
+    print("Your number is exclusive")
+elif firstnumber >= 1:
+    print("Your number is inclusive")
+#elif firstnumber <= 100 or firstnumber <=1:
+    #print("Your number is inclusive")
+
