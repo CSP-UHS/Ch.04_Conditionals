@@ -50,4 +50,4 @@ elif user_input == 'B':
 elif user_input == 'C':
     sensitivity = 0
 
-print("Sensitivity: ",sensitivity )
+print("Sensitivity: ",sensitivity)
