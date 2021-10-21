@@ -77,7 +77,7 @@ else:
 print("Thanks for taking this test!")
 
 finalscore = (score /7)*100
-if finalscore >=90:
+if finalscore >= 90:
     print("Good job, you got an A (A- is basically a knock off A")
 elif finalscore >=80:
     print("good job, you got a B")
