@@ -34,7 +34,7 @@ else:
     print("Wow Bryce, I'd expect you to know that one. (2 cores and 4 threads) ")
 
 q3 = input("Should you study for a test?")
-if q3 == 'true' or 'True' or "yes" or 'Yes':
+if q3 == 'true' or q3 == 'True' or q3 =="yes" or q3 == 'Yes':
     print("Good job")
     score += 1
 else:
@@ -79,11 +79,11 @@ print("Thanks for taking this test!")
 finalscore = (score /7)*100
 if finalscore >= 90:
     print("Good job, you got an A (A- is basically a knock off A")
-elif finalscore >=80:
+elif finalscore >= 80:
     print("good job, you got a B")
-elif finalscore >=70:
+elif finalscore >= 70:
     print("Sadly, you got a C")
-elif finalscore >=60:
+elif finalscore >= 60:
     print("Can't even compete with that D grade ")
 else:
     print("You're a failure")
