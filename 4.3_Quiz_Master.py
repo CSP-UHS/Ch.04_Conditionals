@@ -46,11 +46,7 @@ if q4 == '93-100':
     score += 1
 else:
     print("93-100 is that beautiful A grade")
-q5 = input("How do you use a projector?")
-print("A: Slap it until it works")
-print("B: Plug the HDMI into the computer and put it on the right input")
-print("C: Scream at it")
-print("D: Put in a tech support ticket ")
+q5 = input("How do you use a projector? \n A: Slap it until it works \n B: Plug the HDMI into the computer and put it on the right input \n C: Scream at it \n D: Put in a tech support ticket")
 if q5 == 'B':
     print("Good Job! You did it! Now tell Mr. Hermon your wise words.")
     score += 1
