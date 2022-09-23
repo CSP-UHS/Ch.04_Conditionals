@@ -18,3 +18,21 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+
+nmb=float(input("give me a number   :"))
+print("--------------------")
+if nmb%2==0:
+    print("it is even")
+else:
+    print("it is odd")
+print("--------------------")
+if nmb<0:
+    print("it is negative")
+if nmb>0:
+    print("it is positive")
+print("--------------------")
+if nmb > -100 and nmb < 100:
+    print("your number is less than greater than -100 and less than 100")
+else:
+    print("PUT A DIFFERENT NUMBER NOW")
+print("--------------------")
