@@ -4,18 +4,20 @@ QUIZ MASTER PROJECT
 The criteria for the project are on the website. Make sure you test this quiz with 
 two of your student colleagues before you run it by your instructor.
 '''
+import time
+
 x=0
 y=0
-z=x/(x+y)
 print("Welcome to Family Guy Trivia!")
 print("---") #q1
+time.sleep(6)
 print("Who founded Quahog, Rhode Island?"
       "\nA. James Woods"
       "\nB. Peter Griffin"
       "\nC. Griffin Peterson"
       "\nD. Stewie Griffin")
 q1=input("What is your answer?")
-if q1.upper() == "C":
+if q1.upper().strip() == "C":
     print("Correct!")
     x += 1
 else:
@@ -28,7 +30,7 @@ print("How old is Quagmire?"
       "\nC. 52"
       "\nD. 48")
 q1=input("What is your answer?")
-if q1.upper() == "A":
+if q1.upper().strip() == "A":
     print("Correct!")
     x += 1
 else:
@@ -41,7 +43,7 @@ print("Who did Joe say put him in his wheelchair??"
       "\nC. The Lorax"
       "\nD. The Grinch")
 q1=input("What is your answer?")
-if q1.upper() == "D":
+if q1.upper().strip() == "D":
     print("Correct!")
     x += 1
 else:
@@ -54,7 +56,7 @@ print("What is the name of the giant chicken?"
       "\nC. Josh"
       "\nD. Doesn't have a name")
 q1=input("What is your answer?")
-if q1.upper() == "A":
+if q1.upper().strip() == "A":
     print("Correct!")
     x += 1
 else:
@@ -67,7 +69,7 @@ print("Where was Peter born?"
       "\nC. International waters"
       "\nD. Canada")
 q1=input("What is your answer?")
-if q1.upper() == "B":
+if q1.upper().strip() == "B":
     print("Correct!")
     x += 1
 else:
@@ -80,7 +82,7 @@ print("What is Peter's favorite song?"
       "\nC. Fat"
       "\nD. Just Screams")
 q1=input("What is your answer?")
-if q1.upper() == "B":
+if q1.upper().strip() == "B":
     print("Correct!")
     x += 1
 else:
@@ -93,20 +95,20 @@ print("What is Meg's real name?"
       "\nC. Megatron"
       "\nD. Megideth")
 q1=input("What is your answer?")
-if q1.upper() == "C":
+if q1.upper().strip() == "C":
     print("Correct!")
     x += 1
 else:
     print("Wrong the answer was Megatron.")
     y += 1
 print("---") #q8
-print("When drunk what instrument Peter good at?"
+print("When drunk what instrument is Peter good at?"
       "\nA. Trombone"
       "\nB. Guitar"
       "\nC. Harp"
       "\nD. Piano")
 q1=input("What is your answer?")
-if q1.upper() == "D":
+if q1.upper().strip() == "D":
     print("Correct!")
     x += 1
 else:
@@ -119,7 +121,7 @@ print("What is Peter's real name?"
       "\nC. Zach"
       "\nD. Finn")
 q1=input("What is your answer?")
-if q1.upper() == "A":
+if q1.upper().strip() == "A":
     print("Correct!")
     x += 1
 else:
@@ -132,7 +134,7 @@ print("Who caused the Big Bang?"
       "\nC. Peter Griffin"
       "\nD. Stewie Griffin")
 q1=input("What is your answer?")
-if q1.upper() == "D":
+if q1.upper().strip() == "D":
     print("Correct!")
     x += 1
 else:
@@ -145,11 +147,12 @@ print("What is the name of the bar in Family Guy?"
       "\nC. Shoney's"
       "\nD. The Drunk Dad")
 q1=input("What is your answer?")
-if q1.upper() == "A":
+if q1.upper().strip() == "A":
     print("Correct!")
     x += 1
 else:
     print("Wrong the answer was The Drunken Clam.")
     y += 1
 print("-------------------------------------------------------")
+z= 100*(x/(x+y))
 print("You got" ,z, "% of the questions correct.")
