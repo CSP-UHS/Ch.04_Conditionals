@@ -1,4 +1,4 @@
-# Sign your name:________________
+# Sign your name: Arianna Lear
 
   #1. Make the following program work. (3 mistakes)
      
