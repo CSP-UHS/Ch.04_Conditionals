@@ -23,7 +23,7 @@ print()
 
 if user_input.upper() == "A":
     x=1
-elif user_input.upper() == "B":
+elif user_input.upper().strip() == "B":
     x=2
 elif user_input.upper() == "C":
     x=2
@@ -54,7 +54,7 @@ if user_input.upper() == "A":
     x=2
 elif user_input.upper() == "B":
     x=2
-elif user_input.upper() == "C":
+elif user_input.upper().strip() == "C":
     x=1
 elif user_input.upper() == "D":
     x=2
@@ -81,7 +81,7 @@ print()
 
 if user_input.upper() == "A":
     x=2
-elif user_input.upper() == "B":
+elif user_input.upper().strip() == "B":
     x=1
 elif user_input.upper() == "C":
     x=2
@@ -112,7 +112,7 @@ if user_input.upper() == "A":
     x=2
 elif user_input.upper() == "B":
     x=2
-elif user_input.upper() == "C":
+elif user_input.upper().strip() == "C":
     x=1
 elif user_input.upper() == "D":
     x=2
@@ -139,7 +139,7 @@ print()
 
 if user_input.upper() == "A":
     x=2
-elif user_input.upper() == "B":
+elif user_input.upper().strip() == "B":
     x=1
 elif user_input.upper() == "C":
     x=2
@@ -168,7 +168,7 @@ print()
 
 if user_input.upper() == "A":
     x=2
-elif user_input.upper() == "B":
+elif user_input.upper().strip() == "B":
     x=1
 elif user_input.upper() == "C":
     x=2
@@ -201,7 +201,7 @@ elif user_input.upper() == "B":
     x = 2
 elif user_input.upper() == "C":
     x = 2
-elif user_input.upper() == "D":
+elif user_input.upper().strip() == "D":
     x = 1
 
 if x == 1:
@@ -230,7 +230,7 @@ elif user_input.upper() == "B":
     x = 2
 elif user_input.upper() == "C":
     x = 2
-elif user_input.upper() == "D":
+elif user_input.upper().strip() == "D":
     x = 1
 
 if x == 1:
@@ -255,7 +255,7 @@ print()
 
 if user_input.upper() == "A":
     x = 2
-elif user_input.upper() == "B":
+elif user_input.upper().strip() == "B":
     x = 1
 elif user_input.upper() == "C":
     x = 2
@@ -282,7 +282,7 @@ user_input = input("What is the name of the first dragon in Skylanders")
 
 print()
 
-if user_input.upper() == "A":
+if user_input.upper().strip() == "A":
     x = 1
 elif user_input.upper() == "B":
     x = 2
