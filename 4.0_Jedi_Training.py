@@ -11,7 +11,7 @@ else:
 
  # 2. Make the following program work. (3 mistakes)
 
-x = input("Enter a number: ")
+x = int(input("Enter a number: "))
 if x == 3:
     print("You entered 3")
 
@@ -30,6 +30,8 @@ else:
 jedi = input("Name one of the top 3 greatest Jedi.")
 if jedi.lower() == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":
     print("That is correct!")
+else:
+    print("I don't think that's right")
 
 
 
