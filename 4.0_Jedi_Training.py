@@ -1,7 +1,7 @@
 # Sign your name: Samuel Pattison
 
   #1. Make the following program work. (3 mistakes)
-'''
+
 midi = float(input("Enter midichlorian count: "))
 if midi > 10000:
     print("You have serious Jedi potential")
@@ -31,7 +31,7 @@ jedi = input("Name one of the top 3 greatest Jedi?")
 if jedi.upper()=="YODA" or jedi.upper()=="LUKE_SKYWALKER" or jedi.upper()=="OBI-WAN_KENOBI":
     print("That is correct!")
 
-'''
+
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
  #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.

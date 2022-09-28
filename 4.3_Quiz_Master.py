@@ -24,13 +24,9 @@ else:
     print("Wrong the answer was Griffin Peterson.")
     y += 1
 print("---") #q2
-print("How old is Quagmire?"
-      "\nA. 61"
-      "\nB. 73"
-      "\nC. 52"
-      "\nD. 48")
+print("How old is Quagmire?")
 q1=input("What is your answer?")
-if q1.upper().strip() == "A":
+if q1.strip() == "61":
     print("Correct!")
     x += 1
 else:
@@ -141,18 +137,38 @@ else:
     print("Wrong the answer was Stewie Griffin.")
     y += 1
 print("---") #q11
-print("What is the name of the bar in Family Guy?"
-      "\nA. The Drunken Clam"
-      "\nB. Moe's Tavern"
-      "\nC. Shoney's"
-      "\nD. The Drunk Dad")
+print("What is the name of the bar in Family Guy?")
 q1=input("What is your answer?")
-if q1.upper().strip() == "A":
+if q1.upper().strip() == "DRUNKEN CLAM":
     print("Correct!")
     x += 1
 else:
     print("Wrong the answer was The Drunken Clam.")
     y += 1
 print("-------------------------------------------------------")
-z= 100*(x/(x+y))
-print("You got" ,z, "% of the questions correct.")
+overall = 100*(x/(x+y))
+print("You got" ,overall, "% of the questions correct.")
+if overall>=93:
+    print("Your letter is an A. Fantastic work!")
+elif overall>=90:
+    print("Your letter is an A-. Great work.")
+elif overall>=87:
+    print("Your letter is an B+. Good work.")
+elif overall>=83:
+    print("Your letter is an B. Good Job.")
+elif overall>=80:
+    print("Your letter is an B-. Good work.")
+elif overall>=77:
+    print("Your letter is an C+. Good work.")
+elif overall>=73:
+    print("Your letter is an C. Good work.")
+elif overall>=70:
+    print("Your letter is an C-. Okay work.")
+elif overall>=67:
+    print("Your letter is an D+. Did you try.")
+elif overall>=63:
+    print("Your letter is an D. It's alright.")
+elif overall>=60:
+    print("Your letter is an D-. Feel bad about yourself.")
+else:
+    print("How dumb are you? Maybe Johnston will take you idiotic self. LEAVE!")
