@@ -38,8 +38,6 @@ answer = input("What is your choice?")
 if answer.lower().strip() == "c":
     print("Correct. On to question 4.")
     score = score + 1
-elif answer.lower().strip() == "a":
-    print("Incorrect. The correct choice was option C.")
 else:
     print("Incorrect. The correct choice was option C.")
 print()
