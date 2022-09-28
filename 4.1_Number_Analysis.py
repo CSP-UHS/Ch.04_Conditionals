@@ -18,3 +18,19 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+num = int(input("Type in a number: "))
+if num%2==0:
+    print("The number is even")
+else:
+    print("The number is odd")
+if num==0:
+    print("The number is neither positive nor negative")
+elif num>0:
+    print("The number is positive")
+else:
+    print("The number is negative")
+if num>=-100 and num<=100:
+    print("The number is between -100 and 100")
+else:
+    print("The number is not between -100 and 100")
+
