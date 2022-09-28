@@ -14,8 +14,8 @@ if Q1.lower().strip()=="a"or Q1.lower().strip()=="blue":
     print("Correct!")
     Score+=1
 else:
-    print("Wrong!"
-          "The Answer is: A. Blue")
+    print("Wrong!")
+    print("The Answer is: A. Blue")
 
 print()
 Q2 = input("What is 4+4? ")
@@ -24,6 +24,7 @@ if Q2.lower().strip()=="8":
     Score+=1
 else:
     print("Wrong!")
+    print("The answer is 8")
 
 print()
 Q3 = input("What is the fifth planet in the solar system? ")
@@ -32,6 +33,7 @@ if Q3.lower().strip()=="jupiter":
     Score+=1
 else:
     print("Wrong!")
+    print("The answer is Jupiter")
 
 print()
 Q4 = input("What birds feathers turn pink because of their messy eating habits? ")
@@ -40,6 +42,7 @@ if Q4.lower().strip()=="flamingo"or Q4.lower()=="flamingos"or Q4.lower()=="flami
     Score+=1
 else:
     print("Wrong!")
+    print("The answer is Flamingos")
 
 print()
 Q5 = input("What country is to the immediate south of England? ")
@@ -48,6 +51,7 @@ if Q5.lower().strip()=="france"or Q5.lower()=="belgium":
     Score+=1
 else:
     print("Wrong!")
+    print("The answers are France or Belgium")
 
 print()
 Q6 = input("What is the next holiday? ")
@@ -56,6 +60,7 @@ if Q6.lower().strip()=="halloween":
     Score+=1
 else:
     print("Wrong! I bet you put Christmas.")
+    print("The answer is Halloween")
 
 if Score>3:
     print()
@@ -74,6 +79,7 @@ else:
         print("Your score is: ",Score)
     else:
         print("To bad, so sad.")
+        print("The answer was Ajax")
         print("Your score is: ",Score)
 if Score>4:
     print("Your numerical score is: A")
