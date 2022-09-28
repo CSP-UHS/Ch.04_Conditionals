@@ -146,8 +146,8 @@ else:
     print("Wrong the answer was The Drunken Clam.")
     y += 1
 print("-------------------------------------------------------")
-overall = 100*(x/(x+y))
-print("You got" ,overall, "% of the questions correct.")
+overall = (x/(x+y))
+print("You got" ,f"{overall:.2%}", "of the questions correct.")
 if overall>=93:
     print("Your letter is an A. Fantastic work!")
 elif overall>=90:
