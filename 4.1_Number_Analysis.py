@@ -18,3 +18,21 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+num = int(input("Type in a number"))
+Answer = num % 2
+if Answer == 1:
+    print("Test 1: Odd")
+elif Answer == 0:
+    print("Test 1: Even")
+
+if num == 0:
+    print("Test 2: Zero")
+elif num >= 0:
+    print("Test 2: Positive")
+elif num <= 0:
+    print("Test 2: Negative")
+
+if -100 <= num <= 100:
+    print("Test 3: Inclusive")
+else:
+    print("Test 3: Exclusive")
