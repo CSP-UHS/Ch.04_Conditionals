@@ -14,7 +14,7 @@ else:
 print()
 
 question2 = input("What does Mr. Carver say at the end of every announcement? ")
-if question2.lower() == "go jhawks" or "go j hawks":
+if question2.lower() == "go jhawks" or question2 == "Go Jhawks":
     print("That is correct! GO JHAWKS!!!")
     points += 1
 else:
@@ -27,7 +27,7 @@ print("B. Summer")
 print("C. Fall")
 print("D. Winter")
 question3 = input("")
-if question3.lower() == "c":
+if question3 == "c" or question3 == "C":
     print("That is correct!")
     points += 1
 else:
@@ -35,11 +35,11 @@ else:
 print()
 
 question4 = input("What month is it? ")
-if question4.lower() == "September":
+if question4.lower() == "september" or question4 == "September":
     print("That is correct!")
-    points =+ 1
+    points += 1
 else:
-    print("No! C'mon it's obviously september")
+    print("No! C'mon it's obviously September")
 print()
 
 question5 = int(input("What year is it? "))
@@ -50,4 +50,23 @@ else:
     print("Nope its 2022 what year are you living in?")
 print()
 
-print("Your final score is", points, "/ 5")
+question6 = int(input("How many weeks are in a year? "))
+if question6 == 52:
+    print("Yup 52 is correct!")
+    points += 1
+else:
+    print("No you silly goose! There's 52 weeks!")
+print()
+
+print("Was this a good quiz?")
+print("A. Yes")
+print("B. No")
+question7 = input("")
+if question7 == "A":
+    print("Of course it is that's correct!")
+    points += 1
+else:
+    print("No that's wrong this was an amazing quiz!")
+
+print()
+print("Your final score is", points, "/ 6")
