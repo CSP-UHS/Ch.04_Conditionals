@@ -35,11 +35,11 @@ print("A) The United States of America")
 print("B) Brazil")
 print("C) China")
 answer = input("What is your choice?")
-if answer.lower().strip() == "c":
+if answer.lower().strip() == "a":
     print("Correct. On to question 4.")
     score = score + 1
 else:
-    print("Incorrect. The correct choice was option C.")
+    print("Incorrect. The correct choice was option A.")
 print()
 print("Question 4: In Mojang's hit game, Minecraft, what is the name of the "
       "default player character?")
