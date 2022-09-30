@@ -27,8 +27,8 @@ else:
 
   # 4. Make the following program work. (4 mistakes)
      
-jedi = input("Name one of the top 3 greatest Jedi.")
-if jedi.lower() == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":
+jedi = input("Name one of the top 3 greatest Jedi. ")
+if jedi.lower() == "Yoda" or jedi.lower() == "Luke Skywalker" or jedi.lower() == "Obi-Wan Kenobi":
     print("That is correct!")
 else:
     print("I don't think that's right")
@@ -44,12 +44,14 @@ print("A. Jedi Master")
 print("B. Sith Lord")
 print("C. Droid")
 
-user_input = input("Choose a character?")
+user_input = input("Choose a character? ")
 
-if user_input == "A":
+if user_input.upper() == "A":
     sensitivity = 1000
-elif user_input == "B":
+elif user_input.upper() == "B":
     sensitivity = 900
-elif user_input == "C":
+elif user_input.upper() == "C":
     sensitivity = 0
-print("Sensitivity: ",sensitivity)
+else:
+    sensitivity = "not a choice"
+print("Sensitivity: ", sensitivity)

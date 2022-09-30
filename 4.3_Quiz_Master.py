@@ -5,12 +5,12 @@ The criteria for the project are on the website. Make sure you test this quiz wi
 two of your student colleagues before you run it by your instructor.
 '''
 points = 0
-question1 = int(input("What is 1 + 1? "))
-if question1 == 2:
-    print("Good job 2 is correct!")
+question1 = int(input("What is the square root of 49? "))
+if question1 == 7:
+    print("7 is correct!")
     points += 1
 else:
-    print("No the answer is 2 how did you get that wrong!!?")
+    print("Incorrect. The answer is 7.")
 print()
 
 question2 = input("What does Mr. Carver say at the end of every announcement? ")
@@ -18,55 +18,68 @@ if question2.lower() == "go jhawks" or question2 == "Go Jhawks":
     print("That is correct! GO JHAWKS!!!")
     points += 1
 else:
-    print("That's a good guess but obviously the answer is GO JHAWKS!!!")
+    print("Incorrect. The answer is Go Jhawks!")
 print()
 
-print("What season is it right now?")
-print("A. Spring")
-print("B. Summer")
-print("C. Fall")
-print("D. Winter")
+print("Which US state has the largest land mass?")
+print("A. Texas")
+print("B. California")
+print("C. Alaska")
+print("D. Montana")
 question3 = input("")
 if question3 == "c" or question3 == "C":
     print("That is correct!")
     points += 1
 else:
-    print("Umm no, clearly fall just started")
+    print("Incorrect. The answer is Alaska.")
 print()
 
-question4 = input("What month is it? ")
-if question4.lower() == "september" or question4 == "September":
+question4 = input("What is the capital of France? ")
+if question4.lower() == "Paris" or question4 == "Paris":
     print("That is correct!")
     points += 1
 else:
-    print("No! C'mon it's obviously September")
+    print("Incorrect. The answer is Paris.")
 print()
 
-question5 = int(input("What year is it? "))
-if question5 == 2022:
-    print("2022 is correct!")
+question5 = int(input("How much is a bakers dozen? "))
+if question5 == 13:
+    print("That is correct!")
     points += 1
 else:
-    print("Nope its 2022 what year are you living in?")
+    print("Incorrect. The answer is 13.")
 print()
 
 question6 = int(input("How many weeks are in a year? "))
 if question6 == 52:
-    print("Yup 52 is correct!")
+    print("52 is correct!")
     points += 1
 else:
-    print("No you silly goose! There's 52 weeks!")
+    print("Incorrect. There are 52 weeks in a year.")
 print()
 
-print("Was this a good quiz?")
-print("A. Yes")
-print("B. No")
+print("What is the longest river in the world?")
+print("A. The Nile River")
+print("B. The Amazon River")
+print("C. The Mississippi River")
+print("D. The Yellow River")
 question7 = input("")
-if question7 == "A":
-    print("Of course it is that's correct!")
+if question7 == "A" or question7 == "a":
+    print("That is correct.")
     points += 1
 else:
-    print("No that's wrong this was an amazing quiz!")
+    print("Incorrect. The answer is the Nile River.")
 
 print()
-print("Your final score is", points, "/ 6")
+percent = round(((points/7)*100), 1)
+
+if percent >= 90:
+    print("Your score is ", percent, "%. That is an A which means you passed! Congratulations!")
+elif percent >= 80:
+    print("Your score is ", percent, "%. That is an B which means you passed! Congratulations!")
+elif percent >= 70:
+    print("Your score is ", percent, "%. That is an C which means you passed! Congratulations!")
+elif percent >= 60:
+    print("Your score is ", percent, "%. That is an D which means you passed! Congratulations!")
+else:
+    print("Your final score is", percent, "% which is a F. That means you failed the test. Better luck next time.")
