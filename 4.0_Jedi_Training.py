@@ -11,7 +11,7 @@ else:
 
  # 2. Make the following program work. (3 mistakes)
      
-x = float(input("Enter a number: "))
+x = int(input("Enter a number: "))
 if x == 3:
     print("You entered 3")
 
@@ -19,7 +19,7 @@ if x == 3:
   # 3. Make the following program work. (4 mistakes)
      
 answer = input("What is the name of Poe Dameron's Droid? ")
-if answer == "BB8":
+if answer.upper() == "BB8":
     print("Correct!")
 else:
     print("Incorrect! It is BB8.")
@@ -28,7 +28,7 @@ else:
   # 4. Make the following program work. (4 mistakes)
      
 jedi = input("Name one of the top 3 greatest Jedi.")
-if jedi == "Yoda" or "Luke Skywalker" or "Obi-Wan Kenobi":
+if jedi.lower() == "yoda" or jedi.lower() == "luke skywalker" or jedi.lower() == "obi-wan kenobi":
     print("That is correct!")
 
 
@@ -45,17 +45,13 @@ print("C. Droid")
 user_input = input("Choose a character?")
 
 sensitivity = 0
-if user_input == "A":
+if user_input.upper() == "A":
     sensitivity = 1000
-elif user_input == "B":
+elif user_input.upper() == "B":
     sensitivity = 900
-elif user_input == "C":
+elif user_input.upper() == "C":
     sensitivity = 0
-
+else:
+    print("Not a choice!")
+    sensitivity = ""
 print("Sensitivity: ",sensitivity)
-
-# v = input("enter TEST")
-# a = test
-#if v.lower()==a:
-#   print("it worked")
-# important function to detect lowercase letters :)

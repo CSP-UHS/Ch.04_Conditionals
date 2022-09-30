@@ -9,7 +9,7 @@ two of your student colleagues before you run it by your instructor.
 #multiple choice variables
 
 score = 0
-
+questions = 7
 
 print("We will now begin the greatest quiz of all time.")
 print("Please remember that spelling matters during this quiz. However, capitalization does not.")
@@ -44,11 +44,11 @@ print()
 print("Question 4: In Mojang's hit game, Minecraft, what is the name of the "
       "default player character?")
 answer = input("What is your answer?")
-if answer.lower().strip() == "steve":
+if answer.lower().strip() == "steve" or answer.lower().strip() == "alex":
     print("Correct. On to question 5.")
     score = score + 1
 else:
-    print("Incorrect. The correct answer was; steve.")
+    print("Incorrect. The correct answer was; Steve. An alternate answer could have been Alex as well.")
 print()
 print("Question 5: Name one of the noble gasses in chemistry.")
 answer = input("What is your answer?")
@@ -79,7 +79,7 @@ else:
 print("The quiz is now over, your judgement will arrive soon,")
 print("...")
 print("...")
-questions = 7
+
 grade = score/questions
 letter = "blank"
 if grade > 0.90:
