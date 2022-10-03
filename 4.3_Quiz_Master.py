@@ -4,6 +4,8 @@ QUIZ MASTER PROJECT
 The criteria for the project are on the website. Make sure you test this quiz with 
 two of your student colleagues before you run it by your instructor.
 '''
+print("Welcome to the miscellaneous quiz!!")
+print()
 points = 0
 question1 = int(input("What is the square root of 49? "))
 if question1 == 7:
@@ -35,7 +37,7 @@ else:
 print()
 
 question4 = input("What is the capital of France? ")
-if question4.lower() == "Paris" or question4 == "Paris":
+if question4.lower() == "paris" or question4 == "Paris":
     print("That is correct!")
     points += 1
 else:
