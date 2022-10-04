@@ -18,3 +18,19 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+
+
+number = int(input("Give me a number!"))
+nb = number/2
+if (nb % 1) == 0:
+    print("Your number is even!")
+else:
+    print("Your number is Odd!")
+if nb < 0:
+    print("Your number is negative")
+else:
+    print("Your number is positive")
+if number > -100 and number < 100:
+    print("You number is Inclusive!")
+else:
+    print("Your number is Exclusive!")
