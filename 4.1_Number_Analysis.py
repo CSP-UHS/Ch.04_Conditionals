@@ -18,3 +18,26 @@ Out:  Test 1: Odd
       Test 2: Negative
       Test 3: Exclusive
 '''
+
+
+user = float(input("Choose a number: "))
+
+print ("Is it odd or even?")
+if user%2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+print ("Is it positive, negative or zero?")
+if user > 0:
+    print("Positive")
+elif user == 0:
+    print("Zero")
+else:
+    print("Negative")
+
+print("Is it inclusively between -100 and +100?")
+if user > 100 or user < -100:
+    print("Exclusive")
+else:
+    print("Inclusive")
