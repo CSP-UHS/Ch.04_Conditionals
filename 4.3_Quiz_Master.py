@@ -5,6 +5,7 @@ The criteria for the project are on the website. Make sure you test this quiz wi
 two of your student colleagues before you run it by your instructor.
 '''
 correct = 0
+total=0
 print()
 print("Star Wars Pop Quiz!")
 print()
@@ -15,8 +16,10 @@ print()
 if question.lower() == "grogu":
     print("Correct!")
     correct+=1
+    total+=1
 else:
     print("Wrong! The correct answer is Grogu.")
+    total+=1
 print()
 
 
@@ -25,8 +28,10 @@ print()
 if question.lower() == "rey":
     print("Correct!")
     correct+=1
+    total+=1
 else:
     print("Wrong! The correct answer is Rey.")
+    total+=1
 print()
 
 
@@ -35,8 +40,10 @@ print()
 if question.lower() == "ahsoka" or question.lower() == "ahsoka tano":
     print("Correct!")
     correct+=1
+    total+=1
 else:
     print("Wrong! The correct answer is Ahsoka Tano.")
+    total+=1
 print()
 
 
@@ -45,8 +52,10 @@ print()
 if question.lower() == "din djarin":
     print("Correct!")
     correct+=1
+    total+=1
 else:
     print("Wrong! The correct answer is Din Djarin.")
+    total+=1
 print()
 
 
@@ -61,8 +70,10 @@ print()
 if question.lower() == "c":
     print("Correct!")
     correct+=1
+    total+=1
 else:
     print("Wrong! The correct choice is C.")
+    total+=1
 print()
 
 
@@ -77,8 +88,10 @@ print()
 if question.lower() == "a":
     print("Correct!")
     correct+=1
+    total+=1
 else:
     print("Wrong! The correct choice is A.")
+    total+=1
 print()
 
 
@@ -93,8 +106,10 @@ print()
 if question.lower() == "b":
     print("Correct!")
     correct+=1
+    total+=1
 else:
     print("Wrong! The correct choice is B.")
+    total+=1
 print()
 
 
@@ -103,8 +118,10 @@ print()
 if question == "975":
     print("Correct!")
     correct+=1
+    total+=1
 else:
     print("Wrong! The correct answer is 975.")
+    total+=1
 print()
 
 
@@ -113,23 +130,27 @@ print()
 if question == "10.15":
     print("Correct!")
     correct+=1
+    total+=1
 else:
     print("Wrong! The correct answer is 10.15.")
+    total+=1
 print()
 
 
-question = str(input("If the mass of an object is 5912 and the acceleration of the object is 9 what if the force of the object? ==> "))
+question = str(input("If the mass of an object is 5912 and the acceleration of the object is 9 what is the force of the object? ==> "))
 print()
 if question == "53208" or question == "53,208":
     print("Correct!")
     correct+=1
+    total+=1
 else:
     print("Wrong! The correct answer is 53,208")
+    total+=1
 print()
 
 
 
-grade = correct*10
+grade = correct/total*100
 
 if grade >= 92:
     letter="A"
