@@ -12,23 +12,23 @@ worth= .01* worth
 worth2 = 1-worth
 grade = sem*worth2+final*worth
 print("Your overall grade is:", sem*worth2+final*worth )
-if grade > 92:
+if grade >= 92:
     print("A")
-elif grade > 90:
+elif grade >= 90:
     print("A-")
-elif grade > 88:
+elif grade >= 88:
     print("B+")
-elif grade > 82:
+elif grade >= 82:
     print("B")
-elif grade > 80:
+elif grade >= 80:
     print("B-")
-elif grade > 78:
+elif grade >= 78:
     print("C+")
-elif grade > 72:
+elif grade >= 72:
     print("C")
-elif grade > 70:
+elif grade >= 70:
     print("C-")
-elif grade > 65:
+elif grade >= 65:
     print("D")
 else:
     print("F")

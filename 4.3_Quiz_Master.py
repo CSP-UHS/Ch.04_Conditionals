@@ -130,26 +130,28 @@ print()
 
 
 grade = correct*10
-print("Your overall grade is:", grade)
-if grade > 92:
-    print("A")
-elif grade > 90:
-    print("A-")
-elif grade > 88:
-    print("B+")
-elif grade > 82:
-    print("B")
-elif grade > 80:
-    print("B-")
-elif grade > 78:
-    print("C+")
-elif grade > 72:
-    print("C")
-elif grade > 70:
-    print("C-")
-elif grade > 65:
-    print("D")
+
+if grade >= 92:
+    letter="A"
+elif grade >= 90:
+    letter="A-"
+elif grade >= 88:
+    letter="B+"
+elif grade >= 82:
+    letter="B"
+elif grade >= 80:
+    letter="B-"
+elif grade >= 78:
+    letter="C+"
+elif grade >= 72:
+    letter="C"
+elif grade >= 70:
+    letter="C-"
+elif grade >= 65:
+    letter="D"
 else:
-    print("F")
+    letter="F"
     print("You need to learn more about Star Wars!")
+
+print("Your overall grade is:", grade,"% ",letter)
 
