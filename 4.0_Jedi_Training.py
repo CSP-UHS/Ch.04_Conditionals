@@ -1,4 +1,4 @@
-# 4.0 Jedi Training (pts)  Name:________________
+# 4.0 Jedi Training (40pts)  Name:________________
 
   #1. Make the following program work. (3 mistakes)  (3pts)
      
@@ -34,7 +34,7 @@
 
 
  # 5. Make the following program work whether they enter a, A, Jedi Master or jedi master
- #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.  (5pts)
+ #    Print "Not a choice!" if they don't choose any of the three and set sensitivity to blank text.  (6pts)
      
      print("Welcome to the Jedi Academy!")
 
@@ -52,3 +52,40 @@
          sensitivity = 0
 
      print("Sensitivity: ",Sensitivity)
+
+
+
+
+'''
+6. NUMBER ANALYSIS PROGRAM  (10pts)
+-----------------------
+Create a program that asks the user for a number and then analyzes it to determine if it is:
+1.) odd or even
+2.) positive, negative or zero
+3.) inclusively between -100 and +100
+
+A small report will then be printed. Use the following to test your program:
+
+In: 32  
+Out:  Test 1: Even
+      Test 2: Positive
+      Test 3: Inclusive
+
+In: -123  
+Out:  Test 1: Odd
+      Test 2: Negative
+      Test 3: Exclusive
+'''
+
+
+
+
+
+'''
+GRADING 2.0    (10pts)
+-------------------
+Copy your Grading 1.0 program below and then modify it to also print out the letter grade depending on the numerical grade.
+If they fail, tell them to "Transfer to Johnston!"
+'''
+
+
