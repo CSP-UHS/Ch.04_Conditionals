@@ -1,4 +1,5 @@
 # 4.0 Jedi Training (40pts)  Name:________________
+#Below each program list the mistakes found in comments.
 
   #1. Make the following program work. (3 mistakes)  (3pts)
      
